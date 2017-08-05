@@ -58,6 +58,7 @@
             this.agregarUsuario_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
             this.agregarUsuario_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.agregarUsuario_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agregarUsuario_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.agregarUsuario_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.agregar_usuario;
             this.agregarUsuario_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.agregarUsuario_btn.Location = new System.Drawing.Point(30, 111);
@@ -77,6 +78,7 @@
             this.tipoUsuario_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
             this.tipoUsuario_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tipoUsuario_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipoUsuario_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tipoUsuario_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.tipoUsuario__1_;
             this.tipoUsuario_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.tipoUsuario_btn.Location = new System.Drawing.Point(30, 19);
@@ -104,28 +106,35 @@
             // 
             // cerrarSesion_btn
             // 
-            this.cerrarSesion_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cerrarSesion_btn.Location = new System.Drawing.Point(484, 4);
+            this.cerrarSesion_btn.BackColor = System.Drawing.SystemColors.Info;
+            this.cerrarSesion_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.cerrarSesion_btn.FlatAppearance.BorderSize = 2;
+            this.cerrarSesion_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cerrarSesion_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cerrarSesion_btn.Location = new System.Drawing.Point(504, 1);
             this.cerrarSesion_btn.Name = "cerrarSesion_btn";
-            this.cerrarSesion_btn.Size = new System.Drawing.Size(108, 23);
+            this.cerrarSesion_btn.Size = new System.Drawing.Size(108, 26);
             this.cerrarSesion_btn.TabIndex = 6;
-            this.cerrarSesion_btn.Text = "Cerrar Sesión";
-            this.cerrarSesion_btn.UseVisualStyleBackColor = true;
+            this.cerrarSesion_btn.Text = "CERRAR SESIÓN";
+            this.cerrarSesion_btn.UseVisualStyleBackColor = false;
             this.cerrarSesion_btn.Click += new System.EventHandler(this.cerrarSesion_btn_Click);
             // 
             // tipoUsuario_lbl
             // 
             this.tipoUsuario_lbl.AutoSize = true;
             this.tipoUsuario_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipoUsuario_lbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.tipoUsuario_lbl.Location = new System.Drawing.Point(352, 8);
             this.tipoUsuario_lbl.Name = "tipoUsuario_lbl";
-            this.tipoUsuario_lbl.Size = new System.Drawing.Size(0, 13);
+            this.tipoUsuario_lbl.Size = new System.Drawing.Size(11, 13);
             this.tipoUsuario_lbl.TabIndex = 5;
+            this.tipoUsuario_lbl.Text = "t";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(234, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 13);
@@ -136,6 +145,7 @@
             // 
             this.Usuario_lbl.AutoSize = true;
             this.Usuario_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Usuario_lbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Usuario_lbl.Location = new System.Drawing.Point(87, 8);
             this.Usuario_lbl.Name = "Usuario_lbl";
             this.Usuario_lbl.Size = new System.Drawing.Size(14, 13);
@@ -146,6 +156,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(13, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
@@ -155,6 +166,7 @@
             // groupBox1
             // 
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Location = new System.Drawing.Point(12, 41);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(544, 302);
@@ -168,6 +180,7 @@
             this.groupBox2.Controls.Add(this.tipoUsuario_btn);
             this.groupBox2.Controls.Add(this.agregarUsuario_btn);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox2.Location = new System.Drawing.Point(562, 41);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(199, 302);
@@ -183,6 +196,7 @@
             this.otherSettings_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
             this.otherSettings_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.otherSettings_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherSettings_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.otherSettings_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.agregar_usuario;
             this.otherSettings_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.otherSettings_btn.Location = new System.Drawing.Point(30, 203);
@@ -195,6 +209,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.LightSlateGray;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mENUToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -222,7 +237,7 @@
             // 
             this.notActivated_lbl.AutoSize = true;
             this.notActivated_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.notActivated_lbl.ForeColor = System.Drawing.Color.Red;
+            this.notActivated_lbl.ForeColor = System.Drawing.Color.DarkRed;
             this.notActivated_lbl.Location = new System.Drawing.Point(454, 9);
             this.notActivated_lbl.Name = "notActivated_lbl";
             this.notActivated_lbl.Size = new System.Drawing.Size(312, 20);
@@ -233,14 +248,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(778, 382);
             this.Controls.Add(this.notActivated_lbl);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "MainScreenForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SISTEMA ADMINISTRATIVO PARQUEO";

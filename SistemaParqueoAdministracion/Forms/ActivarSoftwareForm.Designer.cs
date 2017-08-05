@@ -55,12 +55,16 @@
             // 
             // activar_btn
             // 
+            this.activar_btn.BackColor = System.Drawing.SystemColors.Info;
+            this.activar_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.activar_btn.FlatAppearance.BorderSize = 2;
+            this.activar_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.activar_btn.Location = new System.Drawing.Point(120, 82);
             this.activar_btn.Name = "activar_btn";
             this.activar_btn.Size = new System.Drawing.Size(100, 41);
             this.activar_btn.TabIndex = 2;
             this.activar_btn.Text = "ACTIVAR SOFTWARE";
-            this.activar_btn.UseVisualStyleBackColor = true;
+            this.activar_btn.UseVisualStyleBackColor = false;
             this.activar_btn.Click += new System.EventHandler(this.activar_btn_Click);
             // 
             // activado_lbl
@@ -78,11 +82,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(338, 135);
             this.Controls.Add(this.activado_lbl);
             this.Controls.Add(this.activar_btn);
             this.Controls.Add(this.sn_txt);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ActivarSoftwareForm";
