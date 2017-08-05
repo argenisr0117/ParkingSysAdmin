@@ -13,6 +13,7 @@ namespace SistemaParqueoAdministracion
         public static string UserId;
         public static string UserName;
         public static string TipoUsuario;
+        public static bool Activate;
 
         /// <summary>
         /// The main entry point for the application.

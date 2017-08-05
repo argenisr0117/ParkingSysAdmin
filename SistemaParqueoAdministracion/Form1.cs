@@ -35,6 +35,9 @@ namespace SistemaParqueoAdministracion
                 
                 
             }
+
+            //SN sn = new SN();
+            //MessageBox.Show(sn.serial());
         }
 
         private void registrarLogin_txt_Click(object sender, EventArgs e)
@@ -96,6 +99,7 @@ namespace SistemaParqueoAdministracion
                     this.Hide();
                     Forms.MainScreenForm form = new Forms.MainScreenForm();
                     form.ShowDialog();
+                    this.Close();
 
                 }
                 else
@@ -125,7 +129,8 @@ namespace SistemaParqueoAdministracion
                 Program.TipoUsuario = dt.Rows[0]["descripcion"].ToString();
                 this.Hide();
                 Forms.MainScreenForm form = new Forms.MainScreenForm();
-                form.Show();
+                form.ShowDialog();
+                this.Close();
 
                 //this.Close();
             }

@@ -12,6 +12,7 @@ namespace SistemaParqueoAdministracion.Forms
 {
     public partial class MainScreenForm : Form
     {
+        SETTINGS S = new SETTINGS();
         public MainScreenForm()
         {
             InitializeComponent();
@@ -34,6 +35,16 @@ namespace SistemaParqueoAdministracion.Forms
             Usuario_lbl.Text = Program.UserName + " - " + Program.UserId;
              
             tipoUsuario_lbl.Text = Program.TipoUsuario ;
+            bool mensaje = S.CheckIfSoftwareActivated();
+            if (mensaje)
+            {
+                notActivated_lbl.Visible = false;
+            }
+            else
+            {
+                toolTip1.SetToolTip(notActivated_lbl, "ESTACION DE ENTRADA Y ESTACION DE SALIDA ESTARAN DESABILITADAS");
+            }
+
         }
 
         private void MainScreenForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -49,9 +60,16 @@ namespace SistemaParqueoAdministracion.Forms
         {
             this.Dispose();
             LoginForm form = new LoginForm();
-            form.ShowDialog();
-           
+            form.ShowDialog();           
             
         }
+
+        private void aCTIVARSOFTWAREToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActivarSoftwareForm form = new ActivarSoftwareForm();
+            form.ShowDialog();
+            notActivated_lbl.Visible = Program.Activate;
+        }
+       
     }
 }

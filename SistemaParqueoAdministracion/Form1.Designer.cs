@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.normal_login_panel = new System.Windows.Forms.Panel();
             this.first_login_panel = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -50,6 +51,7 @@
             this.entrarLogin_txt = new System.Windows.Forms.Button();
             this.Password_txt = new System.Windows.Forms.TextBox();
             this.Usuario_txt = new System.Windows.Forms.TextBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.normal_login_panel.SuspendLayout();
             this.first_login_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -115,11 +117,12 @@
             this.nombreUsuario_txt.Name = "nombreUsuario_txt";
             this.nombreUsuario_txt.Size = new System.Drawing.Size(186, 34);
             this.nombreUsuario_txt.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.nombreUsuario_txt, "NOMBRE");
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::SistemaParqueoAdministracion.Properties.Resources.key;
-            this.pictureBox5.Location = new System.Drawing.Point(73, 199);
+            this.pictureBox5.Location = new System.Drawing.Point(70, 198);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(51, 34);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -135,6 +138,7 @@
             this.confirmarClave_txt.PasswordChar = '*';
             this.confirmarClave_txt.Size = new System.Drawing.Size(186, 24);
             this.confirmarClave_txt.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.confirmarClave_txt, "CONFIRMAR CONTRASEÑA");
             this.confirmarClave_txt.UseSystemPasswordChar = true;
             // 
             // pictureBox3
@@ -228,6 +232,7 @@
             this.clave_txt.PasswordChar = '*';
             this.clave_txt.Size = new System.Drawing.Size(186, 24);
             this.clave_txt.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.clave_txt, "CONTRASEÑA");
             this.clave_txt.UseSystemPasswordChar = true;
             // 
             // userRegistrarLogin_txt
@@ -239,6 +244,7 @@
             this.userRegistrarLogin_txt.Name = "userRegistrarLogin_txt";
             this.userRegistrarLogin_txt.Size = new System.Drawing.Size(186, 34);
             this.userRegistrarLogin_txt.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.userRegistrarLogin_txt, "USUARIO");
             // 
             // pictureBox2
             // 
@@ -395,6 +401,7 @@
         private System.Windows.Forms.Button registrarLogin_txt;
         private System.Windows.Forms.TextBox clave_txt;
         private System.Windows.Forms.TextBox userRegistrarLogin_txt;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
