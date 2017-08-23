@@ -70,6 +70,29 @@ namespace SistemaParqueoAdministracion.Forms
             form.ShowDialog();
             notActivated_lbl.Visible = Program.Activate;
         }
-       
+
+        private void tiempo_precio_txt_Click(object sender, EventArgs e)
+        {
+            configuracionTiempoPrecioForm form = new configuracionTiempoPrecioForm();
+            form.ShowDialog();
+        }
+
+        private void otherSettings_btn_Click(object sender, EventArgs e)
+        {
+            OtrasConfiguracionesForm form = new OtrasConfiguracionesForm();
+            form.ShowDialog();
+        }
+
+        private void Reporte_btn_Click(object sender, EventArgs e)
+        {
+            Forms.Reportes obj = new Reportes();
+            obj.ShowDialog();
+        }
+
+        private void cierre_diario_btn_Click(object sender, EventArgs e)
+        {
+            CierreDiario obj = new CierreDiario();
+            obj.ShowDialog();
+        }
     }
 }

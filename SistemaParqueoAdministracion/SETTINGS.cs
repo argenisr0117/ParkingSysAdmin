@@ -53,7 +53,21 @@ namespace SistemaParqueoAdministracion
             DataTable dt = new DataTable();
             List<clsParametros> lst = new List<clsParametros>();
             //lst.Add(new clsParametros("@estado", Mestado));
-            return dt = C.Listado("GET_USUARIO", lst);
+            return dt = C.Listado("GET_SETTINGS_ADM", lst);
+        }
+
+        public bool updateSettigs()
+        {
+            bool mensaje;
+            List<clsParametros> lst = new List<clsParametros>();
+
+            lst.Add(new clsParametros("@mensaje", "", SqlDbType.Bit, ParameterDirection.Output, 50));
+            lst.Add(new clsParametros("@precioTicket", MprecioTicketPerdido));
+            lst.Add(new clsParametros("@promocion", MmensajePromo));
+            C.EjecutarSP("UPD_SETTINGS_ADM", ref lst);
+            mensaje = Convert.ToBoolean(lst[0].Valor);
+            return mensaje;
+
         }
     }
 }

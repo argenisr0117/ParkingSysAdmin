@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.agregarUsuario_btn = new System.Windows.Forms.Button();
-            this.tipoUsuario_btn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cerrarSesion_btn = new System.Windows.Forms.Button();
             this.tipoUsuario_lbl = new System.Windows.Forms.Label();
@@ -39,56 +37,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.otherSettings_btn = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mENUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aCTIVARSOFTWAREToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notActivated_lbl = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.tiempo_precio_txt = new System.Windows.Forms.Button();
+            this.otherSettings_btn = new System.Windows.Forms.Button();
+            this.tipoUsuario_btn = new System.Windows.Forms.Button();
+            this.agregarUsuario_btn = new System.Windows.Forms.Button();
+            this.cierre_diario_btn = new System.Windows.Forms.Button();
+            this.Reporte_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // agregarUsuario_btn
-            // 
-            this.agregarUsuario_btn.BackColor = System.Drawing.SystemColors.Info;
-            this.agregarUsuario_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.agregarUsuario_btn.FlatAppearance.BorderSize = 2;
-            this.agregarUsuario_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
-            this.agregarUsuario_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.agregarUsuario_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.agregarUsuario_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.agregarUsuario_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.agregar_usuario;
-            this.agregarUsuario_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.agregarUsuario_btn.Location = new System.Drawing.Point(30, 111);
-            this.agregarUsuario_btn.Name = "agregarUsuario_btn";
-            this.agregarUsuario_btn.Size = new System.Drawing.Size(129, 86);
-            this.agregarUsuario_btn.TabIndex = 35;
-            this.agregarUsuario_btn.Text = "AGREGAR/EDITAR USUARIOS";
-            this.agregarUsuario_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.agregarUsuario_btn.UseVisualStyleBackColor = false;
-            this.agregarUsuario_btn.Click += new System.EventHandler(this.agregarUsuario_btn_Click);
-            // 
-            // tipoUsuario_btn
-            // 
-            this.tipoUsuario_btn.BackColor = System.Drawing.SystemColors.Info;
-            this.tipoUsuario_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.tipoUsuario_btn.FlatAppearance.BorderSize = 2;
-            this.tipoUsuario_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
-            this.tipoUsuario_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tipoUsuario_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tipoUsuario_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tipoUsuario_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.tipoUsuario__1_;
-            this.tipoUsuario_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.tipoUsuario_btn.Location = new System.Drawing.Point(30, 19);
-            this.tipoUsuario_btn.Name = "tipoUsuario_btn";
-            this.tipoUsuario_btn.Size = new System.Drawing.Size(129, 86);
-            this.tipoUsuario_btn.TabIndex = 34;
-            this.tipoUsuario_btn.Text = "AGREAGAR/EDITAR TIPOS USUARIOS";
-            this.tipoUsuario_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tipoUsuario_btn.UseVisualStyleBackColor = false;
-            this.tipoUsuario_btn.Click += new System.EventHandler(this.tipoUsuario_btn_Click);
             // 
             // panel1
             // 
@@ -165,47 +129,31 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cierre_diario_btn);
+            this.groupBox1.Controls.Add(this.Reporte_btn);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Location = new System.Drawing.Point(12, 41);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(544, 302);
+            this.groupBox1.Size = new System.Drawing.Size(435, 302);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "REPORTES";
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.tiempo_precio_txt);
             this.groupBox2.Controls.Add(this.otherSettings_btn);
             this.groupBox2.Controls.Add(this.tipoUsuario_btn);
             this.groupBox2.Controls.Add(this.agregarUsuario_btn);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox2.Location = new System.Drawing.Point(562, 41);
+            this.groupBox2.Location = new System.Drawing.Point(453, 41);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(199, 302);
+            this.groupBox2.Size = new System.Drawing.Size(308, 302);
             this.groupBox2.TabIndex = 38;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "CONFIGURACIONES";
-            // 
-            // otherSettings_btn
-            // 
-            this.otherSettings_btn.BackColor = System.Drawing.SystemColors.Info;
-            this.otherSettings_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.otherSettings_btn.FlatAppearance.BorderSize = 2;
-            this.otherSettings_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
-            this.otherSettings_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.otherSettings_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.otherSettings_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.otherSettings_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.agregar_usuario;
-            this.otherSettings_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.otherSettings_btn.Location = new System.Drawing.Point(30, 203);
-            this.otherSettings_btn.Name = "otherSettings_btn";
-            this.otherSettings_btn.Size = new System.Drawing.Size(129, 86);
-            this.otherSettings_btn.TabIndex = 36;
-            this.otherSettings_btn.Text = "OTRAS CONFIGURACIONES";
-            this.otherSettings_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.otherSettings_btn.UseVisualStyleBackColor = false;
             // 
             // menuStrip1
             // 
@@ -244,6 +192,126 @@
             this.notActivated_lbl.TabIndex = 40;
             this.notActivated_lbl.Text = "SOFTWARE NO HA SIDO ACTIVADO";
             // 
+            // tiempo_precio_txt
+            // 
+            this.tiempo_precio_txt.BackColor = System.Drawing.SystemColors.Info;
+            this.tiempo_precio_txt.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.tiempo_precio_txt.FlatAppearance.BorderSize = 2;
+            this.tiempo_precio_txt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
+            this.tiempo_precio_txt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tiempo_precio_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tiempo_precio_txt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tiempo_precio_txt.Image = global::SistemaParqueoAdministracion.Properties.Resources.clock;
+            this.tiempo_precio_txt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tiempo_precio_txt.Location = new System.Drawing.Point(165, 19);
+            this.tiempo_precio_txt.Name = "tiempo_precio_txt";
+            this.tiempo_precio_txt.Size = new System.Drawing.Size(129, 86);
+            this.tiempo_precio_txt.TabIndex = 37;
+            this.tiempo_precio_txt.Text = "CONFIGURAR TIEMPO/PRECIO";
+            this.tiempo_precio_txt.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tiempo_precio_txt.UseVisualStyleBackColor = false;
+            this.tiempo_precio_txt.Click += new System.EventHandler(this.tiempo_precio_txt_Click);
+            // 
+            // otherSettings_btn
+            // 
+            this.otherSettings_btn.BackColor = System.Drawing.SystemColors.Info;
+            this.otherSettings_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.otherSettings_btn.FlatAppearance.BorderSize = 2;
+            this.otherSettings_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
+            this.otherSettings_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.otherSettings_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherSettings_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.otherSettings_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.settings_128;
+            this.otherSettings_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.otherSettings_btn.Location = new System.Drawing.Point(30, 203);
+            this.otherSettings_btn.Name = "otherSettings_btn";
+            this.otherSettings_btn.Size = new System.Drawing.Size(129, 86);
+            this.otherSettings_btn.TabIndex = 36;
+            this.otherSettings_btn.Text = "OTRAS CONFIGURACIONES";
+            this.otherSettings_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.otherSettings_btn.UseVisualStyleBackColor = false;
+            this.otherSettings_btn.Click += new System.EventHandler(this.otherSettings_btn_Click);
+            // 
+            // tipoUsuario_btn
+            // 
+            this.tipoUsuario_btn.BackColor = System.Drawing.SystemColors.Info;
+            this.tipoUsuario_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.tipoUsuario_btn.FlatAppearance.BorderSize = 2;
+            this.tipoUsuario_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
+            this.tipoUsuario_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tipoUsuario_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipoUsuario_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tipoUsuario_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.tipoUsuario__1_;
+            this.tipoUsuario_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tipoUsuario_btn.Location = new System.Drawing.Point(30, 19);
+            this.tipoUsuario_btn.Name = "tipoUsuario_btn";
+            this.tipoUsuario_btn.Size = new System.Drawing.Size(129, 86);
+            this.tipoUsuario_btn.TabIndex = 34;
+            this.tipoUsuario_btn.Text = "AGREAGAR/EDITAR TIPOS USUARIOS";
+            this.tipoUsuario_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tipoUsuario_btn.UseVisualStyleBackColor = false;
+            this.tipoUsuario_btn.Click += new System.EventHandler(this.tipoUsuario_btn_Click);
+            // 
+            // agregarUsuario_btn
+            // 
+            this.agregarUsuario_btn.BackColor = System.Drawing.SystemColors.Info;
+            this.agregarUsuario_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.agregarUsuario_btn.FlatAppearance.BorderSize = 2;
+            this.agregarUsuario_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
+            this.agregarUsuario_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.agregarUsuario_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agregarUsuario_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.agregarUsuario_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.agregar_usuario;
+            this.agregarUsuario_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.agregarUsuario_btn.Location = new System.Drawing.Point(30, 111);
+            this.agregarUsuario_btn.Name = "agregarUsuario_btn";
+            this.agregarUsuario_btn.Size = new System.Drawing.Size(129, 86);
+            this.agregarUsuario_btn.TabIndex = 35;
+            this.agregarUsuario_btn.Text = "AGREGAR/EDITAR USUARIOS";
+            this.agregarUsuario_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.agregarUsuario_btn.UseVisualStyleBackColor = false;
+            this.agregarUsuario_btn.Click += new System.EventHandler(this.agregarUsuario_btn_Click);
+            // 
+            // cierre_diario_btn
+            // 
+            this.cierre_diario_btn.BackColor = System.Drawing.SystemColors.Info;
+            this.cierre_diario_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.cierre_diario_btn.FlatAppearance.BorderSize = 2;
+            this.cierre_diario_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
+            this.cierre_diario_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cierre_diario_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cierre_diario_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cierre_diario_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.clock;
+            this.cierre_diario_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.cierre_diario_btn.Location = new System.Drawing.Point(141, 19);
+            this.cierre_diario_btn.Name = "cierre_diario_btn";
+            this.cierre_diario_btn.Size = new System.Drawing.Size(129, 66);
+            this.cierre_diario_btn.TabIndex = 39;
+            this.cierre_diario_btn.Text = "CIERRE DIARIO";
+            this.cierre_diario_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.cierre_diario_btn.UseVisualStyleBackColor = false;
+            this.cierre_diario_btn.Click += new System.EventHandler(this.cierre_diario_btn_Click);
+            // 
+            // Reporte_btn
+            // 
+            this.Reporte_btn.BackColor = System.Drawing.SystemColors.Info;
+            this.Reporte_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Reporte_btn.FlatAppearance.BorderSize = 2;
+            this.Reporte_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
+            this.Reporte_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Reporte_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reporte_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Reporte_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.clock;
+            this.Reporte_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Reporte_btn.Location = new System.Drawing.Point(6, 19);
+            this.Reporte_btn.Name = "Reporte_btn";
+            this.Reporte_btn.Size = new System.Drawing.Size(129, 66);
+            this.Reporte_btn.TabIndex = 38;
+            this.Reporte_btn.Text = "REPORTES";
+            this.Reporte_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Reporte_btn.UseVisualStyleBackColor = false;
+            this.Reporte_btn.Click += new System.EventHandler(this.Reporte_btn_Click);
+            // 
             // MainScreenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,6 +333,7 @@
             this.Load += new System.EventHandler(this.MainScreenForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -291,5 +360,8 @@
         private System.Windows.Forms.ToolStripMenuItem aCTIVARSOFTWAREToolStripMenuItem;
         private System.Windows.Forms.Label notActivated_lbl;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button tiempo_precio_txt;
+        private System.Windows.Forms.Button Reporte_btn;
+        private System.Windows.Forms.Button cierre_diario_btn;
     }
 }

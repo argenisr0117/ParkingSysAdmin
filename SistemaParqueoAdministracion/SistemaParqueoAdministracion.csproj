@@ -33,10 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,11 +53,23 @@
   <ItemGroup>
     <Compile Include="clsParametros.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="Configuraciones.cs" />
     <Compile Include="Controles\textbox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controles\textbox.Designer.cs">
       <DependentUpon>textbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\textboxN.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\textboxN.Designer.cs">
+      <DependentUpon>textboxN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -68,11 +83,29 @@
     <Compile Include="Forms\ActivarSoftwareForm.Designer.cs">
       <DependentUpon>ActivarSoftwareForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CierreDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CierreDiario.Designer.cs">
+      <DependentUpon>CierreDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\configuracionTiempoPrecioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\configuracionTiempoPrecioForm.Designer.cs">
+      <DependentUpon>configuracionTiempoPrecioForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MainScreenForm.Designer.cs">
       <DependentUpon>MainScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OtrasConfiguracionesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OtrasConfiguracionesForm.Designer.cs">
+      <DependentUpon>OtrasConfiguracionesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\RegistroUsuario.cs">
       <SubType>Form</SubType>
@@ -85,6 +118,12 @@
     </Compile>
     <Compile Include="Forms\RegistroTipoUsuario.Designer.cs">
       <DependentUpon>RegistroTipoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs" />
     <Compile Include="PermisoUsuario.cs" />
@@ -101,14 +140,26 @@
     <EmbeddedResource Include="Forms\ActivarSoftwareForm.resx">
       <DependentUpon>ActivarSoftwareForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CierreDiario.resx">
+      <DependentUpon>CierreDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\configuracionTiempoPrecioForm.resx">
+      <DependentUpon>configuracionTiempoPrecioForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainScreenForm.resx">
       <DependentUpon>MainScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OtrasConfiguracionesForm.resx">
+      <DependentUpon>OtrasConfiguracionesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegistroUsuario.resx">
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegistroTipoUsuario.resx">
       <DependentUpon>RegistroTipoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -120,6 +171,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes\cierre_diario.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\find_tickets.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -180,6 +248,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\agregar_usuario.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-128.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_find %282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_preview.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

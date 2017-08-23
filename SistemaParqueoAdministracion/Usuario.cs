@@ -18,6 +18,8 @@ namespace SistemaParqueoAdministracion
         int Midtipo;
         bool Mestado;
         int Mvalor;
+        DateTime Mfechai;
+        DateTime Mfechaf;
 
 
         public int Idusuario
@@ -56,6 +58,17 @@ namespace SistemaParqueoAdministracion
         {
             get { return Mestado; }
             set { Mestado = value; }
+        }
+
+        public DateTime Fechai
+        {
+            get { return Mfechai; }
+            set { Mfechai = value; }
+        }
+        public DateTime Fechaf
+        {
+            get { return Mfechaf; }
+            set { Mfechaf = value; }
         }
         public string Registrar()
         {
@@ -104,6 +117,14 @@ namespace SistemaParqueoAdministracion
             List<clsParametros> lst = new List<clsParametros>();
             lst.Add(new clsParametros("@estado", Mestado));
             return dt = C.Listado("GET_USUARIO", lst);
+        }
+        public DataTable FindCloseSessions()
+        {
+            DataTable dt = new DataTable();
+            List<clsParametros> lst = new List<clsParametros>();
+            lst.Add(new clsParametros("@fechai", Mfechai));
+            lst.Add(new clsParametros("@fechaf", Mfechaf));
+            return dt = C.Listado("FIND_CLOSE_SESSIONS", lst);
         }
     }
 }
