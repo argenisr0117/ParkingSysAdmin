@@ -153,6 +153,16 @@ namespace SistemaParqueoAdministracion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gohome {
+            get {
+                object obj = ResourceManager.GetObject("gohome", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap key {
             get {
                 object obj = ResourceManager.GetObject("key", resourceCulture);
@@ -206,6 +216,16 @@ namespace SistemaParqueoAdministracion.Properties {
         internal static System.Drawing.Bitmap settings_128 {
             get {
                 object obj = ResourceManager.GetObject("settings-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap statistics__2_ {
+            get {
+                object obj = ResourceManager.GetObject("statistics (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

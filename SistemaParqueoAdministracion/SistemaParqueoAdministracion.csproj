@@ -95,6 +95,12 @@
     <Compile Include="Forms\configuracionTiempoPrecioForm.Designer.cs">
       <DependentUpon>configuracionTiempoPrecioForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empresa.Designer.cs">
+      <DependentUpon>Empresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SETTINGS.cs" />
     <Compile Include="SN.cs" />
+    <Compile Include="Empresas.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="TipoUsuario.cs" />
     <Compile Include="Utilidades.cs" />
@@ -145,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\configuracionTiempoPrecioForm.resx">
       <DependentUpon>configuracionTiempoPrecioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empresa.resx">
+      <DependentUpon>Empresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainScreenForm.resx">
       <DependentUpon>MainScreenForm.cs</DependentUpon>
@@ -257,6 +267,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\print_preview.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics %282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gohome.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

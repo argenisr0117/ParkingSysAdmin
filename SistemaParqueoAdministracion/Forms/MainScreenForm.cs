@@ -86,6 +86,7 @@ namespace SistemaParqueoAdministracion.Forms
         private void Reporte_btn_Click(object sender, EventArgs e)
         {
             Forms.Reportes obj = new Reportes();
+            obj.Valor = -1;
             obj.ShowDialog();
         }
 
@@ -93,6 +94,12 @@ namespace SistemaParqueoAdministracion.Forms
         {
             CierreDiario obj = new CierreDiario();
             obj.ShowDialog();
+        }
+
+        private void empresa_btn_Click(object sender, EventArgs e)
+        {
+            Empresa form = new Empresa();
+            form.ShowDialog();
         }
     }
 }

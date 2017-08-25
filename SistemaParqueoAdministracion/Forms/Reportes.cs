@@ -49,7 +49,7 @@ namespace SistemaParqueoAdministracion.Forms
             lc.ReportPath = ruta;
             sta.Fill(ds.FIND_TICKETS, FechaInicial_dtp.Value,FechaFinal_dtp.Value);
             ReportDataSource rds = new ReportDataSource();
-            ReportDataSource rds1 = new ReportDataSource();
+            //ReportDataSource rds1 = new ReportDataSource();
             rds.Name = "DataSet1";
             rds.Value = (ds.Tables["FIND_TICKETS"]);
             reportViewer1.LocalReport.DataSources.Clear();
@@ -66,18 +66,23 @@ namespace SistemaParqueoAdministracion.Forms
             //parametros[3] = new ReportParameter("Subtotal", subtotal.ToString());
             DataSet1 ds = new DataSet1();
             DataSet1TableAdapters.CIERRE_DIARIOTableAdapter sta = new DataSet1TableAdapters.CIERRE_DIARIOTableAdapter();
+            DataSet1TableAdapters.GET_EMPRESATableAdapter sta1 = new DataSet1TableAdapters.GET_EMPRESATableAdapter();
             reportViewer1.ProcessingMode = ProcessingMode.Local;
             lc = reportViewer1.LocalReport;
             string ruta = "Reportes\\" + Reporte;
             lc.ReportPath = ruta;
             sta.Fill(ds.CIERRE_DIARIO, Idturno, Idusuario);
+            sta1.Fill(ds.GET_EMPRESA);
             ReportDataSource rds = new ReportDataSource();
-            //ReportDataSource rds1 = new ReportDataSource();
+            ReportDataSource rds1 = new ReportDataSource();
             rds.Name = "DataSet1";
             rds.Value = (ds.Tables["CIERRE_DIARIO"]);
+            rds1.Name = "DataSet2";
+            rds1.Value = (ds.Tables["GET_EMPRESA"]);
             reportViewer1.LocalReport.DataSources.Clear();
             //reportViewer1.LocalReport.SetParameters(parametros);
             lc.DataSources.Add(rds);
+            lc.DataSources.Add(rds1);
             this.reportViewer1.RefreshReport();
         }
         private void Buscar_btn_Click(object sender, EventArgs e)

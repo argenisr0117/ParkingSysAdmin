@@ -38,16 +38,17 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.mENUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aCTIVARSOFTWAREToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notActivated_lbl = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.empresa_btn = new System.Windows.Forms.Button();
             this.tiempo_precio_txt = new System.Windows.Forms.Button();
             this.otherSettings_btn = new System.Windows.Forms.Button();
             this.tipoUsuario_btn = new System.Windows.Forms.Button();
             this.agregarUsuario_btn = new System.Windows.Forms.Button();
             this.cierre_diario_btn = new System.Windows.Forms.Button();
             this.Reporte_btn = new System.Windows.Forms.Button();
+            this.mENUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aCTIVARSOFTWAREToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -142,6 +143,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.empresa_btn);
             this.groupBox2.Controls.Add(this.tiempo_precio_txt);
             this.groupBox2.Controls.Add(this.otherSettings_btn);
             this.groupBox2.Controls.Add(this.tipoUsuario_btn);
@@ -166,21 +168,6 @@
             this.menuStrip1.TabIndex = 39;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // mENUToolStripMenuItem
-            // 
-            this.mENUToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aCTIVARSOFTWAREToolStripMenuItem});
-            this.mENUToolStripMenuItem.Name = "mENUToolStripMenuItem";
-            this.mENUToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.mENUToolStripMenuItem.Text = "MENU";
-            // 
-            // aCTIVARSOFTWAREToolStripMenuItem
-            // 
-            this.aCTIVARSOFTWAREToolStripMenuItem.Name = "aCTIVARSOFTWAREToolStripMenuItem";
-            this.aCTIVARSOFTWAREToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.aCTIVARSOFTWAREToolStripMenuItem.Text = "ACTIVAR SOFTWARE";
-            this.aCTIVARSOFTWAREToolStripMenuItem.Click += new System.EventHandler(this.aCTIVARSOFTWAREToolStripMenuItem_Click);
-            // 
             // notActivated_lbl
             // 
             this.notActivated_lbl.AutoSize = true;
@@ -191,6 +178,26 @@
             this.notActivated_lbl.Size = new System.Drawing.Size(312, 20);
             this.notActivated_lbl.TabIndex = 40;
             this.notActivated_lbl.Text = "SOFTWARE NO HA SIDO ACTIVADO";
+            // 
+            // empresa_btn
+            // 
+            this.empresa_btn.BackColor = System.Drawing.SystemColors.Info;
+            this.empresa_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.empresa_btn.FlatAppearance.BorderSize = 2;
+            this.empresa_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
+            this.empresa_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.empresa_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.empresa_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.empresa_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.gohome;
+            this.empresa_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.empresa_btn.Location = new System.Drawing.Point(165, 111);
+            this.empresa_btn.Name = "empresa_btn";
+            this.empresa_btn.Size = new System.Drawing.Size(129, 86);
+            this.empresa_btn.TabIndex = 38;
+            this.empresa_btn.Text = "AGREGAR/EDITAR EMPRESA";
+            this.empresa_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.empresa_btn.UseVisualStyleBackColor = false;
+            this.empresa_btn.Click += new System.EventHandler(this.empresa_btn_Click);
             // 
             // tiempo_precio_txt
             // 
@@ -221,7 +228,7 @@
             this.otherSettings_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.otherSettings_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.otherSettings_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.otherSettings_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.settings_128;
+            this.otherSettings_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.configure;
             this.otherSettings_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.otherSettings_btn.Location = new System.Drawing.Point(30, 203);
             this.otherSettings_btn.Name = "otherSettings_btn";
@@ -281,7 +288,7 @@
             this.cierre_diario_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cierre_diario_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cierre_diario_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.cierre_diario_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.clock;
+            this.cierre_diario_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.statistics__2_;
             this.cierre_diario_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.cierre_diario_btn.Location = new System.Drawing.Point(141, 19);
             this.cierre_diario_btn.Name = "cierre_diario_btn";
@@ -301,16 +308,33 @@
             this.Reporte_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Reporte_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Reporte_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Reporte_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.clock;
+            this.Reporte_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.statistics__2_;
             this.Reporte_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Reporte_btn.Location = new System.Drawing.Point(6, 19);
             this.Reporte_btn.Name = "Reporte_btn";
             this.Reporte_btn.Size = new System.Drawing.Size(129, 66);
             this.Reporte_btn.TabIndex = 38;
-            this.Reporte_btn.Text = "REPORTES";
+            this.Reporte_btn.Text = "HISTORIAL TICKETS";
             this.Reporte_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Reporte_btn.UseVisualStyleBackColor = false;
             this.Reporte_btn.Click += new System.EventHandler(this.Reporte_btn_Click);
+            // 
+            // mENUToolStripMenuItem
+            // 
+            this.mENUToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aCTIVARSOFTWAREToolStripMenuItem});
+            this.mENUToolStripMenuItem.Image = global::SistemaParqueoAdministracion.Properties.Resources.menu;
+            this.mENUToolStripMenuItem.Name = "mENUToolStripMenuItem";
+            this.mENUToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.mENUToolStripMenuItem.Text = "MENU";
+            // 
+            // aCTIVARSOFTWAREToolStripMenuItem
+            // 
+            this.aCTIVARSOFTWAREToolStripMenuItem.Image = global::SistemaParqueoAdministracion.Properties.Resources.key;
+            this.aCTIVARSOFTWAREToolStripMenuItem.Name = "aCTIVARSOFTWAREToolStripMenuItem";
+            this.aCTIVARSOFTWAREToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.aCTIVARSOFTWAREToolStripMenuItem.Text = "ACTIVAR SOFTWARE";
+            this.aCTIVARSOFTWAREToolStripMenuItem.Click += new System.EventHandler(this.aCTIVARSOFTWAREToolStripMenuItem_Click);
             // 
             // MainScreenForm
             // 
@@ -363,5 +387,6 @@
         private System.Windows.Forms.Button tiempo_precio_txt;
         private System.Windows.Forms.Button Reporte_btn;
         private System.Windows.Forms.Button cierre_diario_btn;
+        private System.Windows.Forms.Button empresa_btn;
     }
 }

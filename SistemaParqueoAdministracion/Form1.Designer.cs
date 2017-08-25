@@ -64,6 +64,7 @@
             // 
             // normal_login_panel
             // 
+            this.normal_login_panel.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.normal_login_panel.Controls.Add(this.first_login_panel);
             this.normal_login_panel.Controls.Add(this.pictureBox2);
             this.normal_login_panel.Controls.Add(this.pictureBox1);
@@ -81,6 +82,7 @@
             // 
             // first_login_panel
             // 
+            this.first_login_panel.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.first_login_panel.Controls.Add(this.pictureBox6);
             this.first_login_panel.Controls.Add(this.nombreUsuario_txt);
             this.first_login_panel.Controls.Add(this.pictureBox5);
@@ -112,10 +114,9 @@
             // 
             this.nombreUsuario_txt.BackColor = System.Drawing.SystemColors.Info;
             this.nombreUsuario_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreUsuario_txt.Location = new System.Drawing.Point(130, 78);
-            this.nombreUsuario_txt.Multiline = true;
+            this.nombreUsuario_txt.Location = new System.Drawing.Point(130, 83);
             this.nombreUsuario_txt.Name = "nombreUsuario_txt";
-            this.nombreUsuario_txt.Size = new System.Drawing.Size(186, 34);
+            this.nombreUsuario_txt.Size = new System.Drawing.Size(186, 24);
             this.nombreUsuario_txt.TabIndex = 0;
             this.toolTip1.SetToolTip(this.nombreUsuario_txt, "NOMBRE");
             // 
@@ -133,7 +134,7 @@
             // 
             this.confirmarClave_txt.BackColor = System.Drawing.SystemColors.Info;
             this.confirmarClave_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmarClave_txt.Location = new System.Drawing.Point(130, 199);
+            this.confirmarClave_txt.Location = new System.Drawing.Point(130, 203);
             this.confirmarClave_txt.Name = "confirmarClave_txt";
             this.confirmarClave_txt.PasswordChar = '*';
             this.confirmarClave_txt.Size = new System.Drawing.Size(186, 24);
@@ -227,7 +228,7 @@
             // 
             this.clave_txt.BackColor = System.Drawing.SystemColors.Info;
             this.clave_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clave_txt.Location = new System.Drawing.Point(130, 158);
+            this.clave_txt.Location = new System.Drawing.Point(130, 163);
             this.clave_txt.Name = "clave_txt";
             this.clave_txt.PasswordChar = '*';
             this.clave_txt.Size = new System.Drawing.Size(186, 24);
@@ -239,10 +240,9 @@
             // 
             this.userRegistrarLogin_txt.BackColor = System.Drawing.SystemColors.Info;
             this.userRegistrarLogin_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userRegistrarLogin_txt.Location = new System.Drawing.Point(130, 118);
-            this.userRegistrarLogin_txt.Multiline = true;
+            this.userRegistrarLogin_txt.Location = new System.Drawing.Point(130, 123);
             this.userRegistrarLogin_txt.Name = "userRegistrarLogin_txt";
-            this.userRegistrarLogin_txt.Size = new System.Drawing.Size(186, 34);
+            this.userRegistrarLogin_txt.Size = new System.Drawing.Size(186, 24);
             this.userRegistrarLogin_txt.TabIndex = 1;
             this.toolTip1.SetToolTip(this.userRegistrarLogin_txt, "USUARIO");
             // 
@@ -332,7 +332,7 @@
             // 
             this.Password_txt.BackColor = System.Drawing.SystemColors.Info;
             this.Password_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password_txt.Location = new System.Drawing.Point(127, 118);
+            this.Password_txt.Location = new System.Drawing.Point(127, 123);
             this.Password_txt.Name = "Password_txt";
             this.Password_txt.PasswordChar = '*';
             this.Password_txt.Size = new System.Drawing.Size(186, 24);
@@ -343,10 +343,9 @@
             // 
             this.Usuario_txt.BackColor = System.Drawing.SystemColors.Info;
             this.Usuario_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Usuario_txt.Location = new System.Drawing.Point(127, 78);
-            this.Usuario_txt.Multiline = true;
+            this.Usuario_txt.Location = new System.Drawing.Point(127, 83);
             this.Usuario_txt.Name = "Usuario_txt";
-            this.Usuario_txt.Size = new System.Drawing.Size(186, 34);
+            this.Usuario_txt.Size = new System.Drawing.Size(186, 24);
             this.Usuario_txt.TabIndex = 18;
             // 
             // LoginForm
