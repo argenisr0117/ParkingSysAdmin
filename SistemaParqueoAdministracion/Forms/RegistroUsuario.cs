@@ -71,6 +71,9 @@ namespace SistemaParqueoAdministracion.Forms
             FillCombouserType();
             rbActivo.Checked = true;
             Users_dtg.DefaultCellStyle.Font = new Font("Microsoft Sans Serif", 8);
+            panel3.Location = new Point(this.ClientSize.Width / 2 - panel3.Size.Width / 2,
+                this.ClientSize.Height / 2 - panel3.Size.Height / 2);
+            panel3.Anchor = AnchorStyles.None; 
         }
 
         private void Limpiar()

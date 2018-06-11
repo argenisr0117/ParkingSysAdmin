@@ -85,10 +85,53 @@ namespace SistemaParqueoAdministracion.Forms
             lc.DataSources.Add(rds1);
             this.reportViewer1.RefreshReport();
         }
+        private void DetalleCierre()
+        {
+            ReportParameter[] parametros = new ReportParameter[2];
+            parametros[0] = new ReportParameter("Fechai", FechaInicial_dtp.Value.ToShortDateString());
+            parametros[1] = new ReportParameter("Fechaf", FechaFinal_dtp.Value.ToShortDateString());
+            //parametros[2] = new ReportParameter("Descuento", descuento.ToString());
+            //parametros[3] = new ReportParameter("Subtotal", subtotal.ToString());
+            DataSet1 ds = new DataSet1();
+            DataSet1TableAdapters.RPT_DETALLE_CIERRETableAdapter sta = new DataSet1TableAdapters.RPT_DETALLE_CIERRETableAdapter();
+            DataSet1TableAdapters.GET_EMPRESATableAdapter sta1 = new DataSet1TableAdapters.GET_EMPRESATableAdapter();
+            DataSet1TableAdapters.RPT_DET_LOST_TICKETSTableAdapter sta2 = new DataSet1TableAdapters.RPT_DET_LOST_TICKETSTableAdapter();
+            reportViewer1.ProcessingMode = ProcessingMode.Local;
+            lc = reportViewer1.LocalReport;
+            string ruta = "Reportes\\" + Reporte;
+            lc.ReportPath = ruta;
+            sta.Fill(ds.RPT_DETALLE_CIERRE, FechaInicial_dtp.Value.Date, FechaFinal_dtp.Value.Date);
+            sta1.Fill(ds.GET_EMPRESA);
+            sta2.Fill(ds.RPT_DET_LOST_TICKETS, FechaInicial_dtp.Value.Date, FechaFinal_dtp.Value.Date);
+            ReportDataSource rds = new ReportDataSource();
+            ReportDataSource rds1 = new ReportDataSource();
+            ReportDataSource rds2 = new ReportDataSource();
+            rds.Name = "DataSet1";
+            rds.Value = (ds.Tables["RPT_DETALLE_CIERRE"]);
+            rds1.Name = "DataSet2";
+            rds1.Value = (ds.Tables["GET_EMPRESA"]);
+            rds2.Name = "DataSet3";
+            rds2.Value=(ds.Tables["RPT_DET_LOST_TICKETS"]);
+            reportViewer1.LocalReport.DataSources.Clear();
+            reportViewer1.LocalReport.SetParameters(parametros);
+            lc.DataSources.Add(rds);
+            lc.DataSources.Add(rds1);
+            lc.DataSources.Add(rds2);
+            this.reportViewer1.RefreshReport();
+        }
         private void Buscar_btn_Click(object sender, EventArgs e)
         {
-            Reporte = "find_tickets.rdlc";
-            FindTickets();
+            if (Valor == 1)
+            {
+                Reporte = "find_tickets.rdlc";
+                FindTickets();
+            }
+            else if (Valor == 2)
+            {
+                Reporte = "det_cierre.rdlc";
+                DetalleCierre();
+            }
+            
         }
         private void ShowHidePanel()
         {
