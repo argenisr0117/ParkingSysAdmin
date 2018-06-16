@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Globalization;
 
 namespace SistemaParqueoAdministracion.Forms
 {
@@ -28,16 +29,29 @@ namespace SistemaParqueoAdministracion.Forms
             RegistroTipoUsuario form = new RegistroTipoUsuario();
             form.ShowDialog();
         }
-
+        private void OcultarHora()
+        {
+            hora_lb.Visible = false;
+            fecha_lb.Visible = false;
+        }
+        private void MostrarHora()
+        {
+            hora_lb.Visible = true;
+            fecha_lb.Visible = true;
+        }
         private void agregarUsuario_btn_Click(object sender, EventArgs e)
         {
+            //OcultarHora();
             var form = Application.OpenForms.OfType<RegistroUsuario>().FirstOrDefault();
             RegistroUsuario hijo = form ?? new RegistroUsuario();
             ABrirFormulario(hijo);
+            //MostrarHora();
         }
 
         private void MainScreenForm_Load(object sender, EventArgs e)
         {
+            hora_timer_Tick(e, e);
+            hora_timer.Start();
             Usuario_lbl.Text = Program.UserName + " - " + Program.UserId;
              
             tipoUsuario_lbl.Text = Program.TipoUsuario ;
@@ -50,7 +64,6 @@ namespace SistemaParqueoAdministracion.Forms
             {
                 toolTip1.SetToolTip(notActivated_lbl, "ESTACION DE ENTRADA Y ESTACION DE SALIDA ESTARAN DESABILITADAS");
             }
-
         }
 
         private void cerrarSesion_btn_Click(object sender, EventArgs e)
@@ -82,7 +95,7 @@ namespace SistemaParqueoAdministracion.Forms
 
         private void detalle_cierre_btn_Click(object sender, EventArgs e)
         {
-            Forms.Reportes obj = new Reportes();
+            Reportes obj = new Reportes();
             obj.Valor = 2;
             obj.Show();
         }
@@ -212,6 +225,7 @@ namespace SistemaParqueoAdministracion.Forms
 
         private void ABrirFormulario (Form fh)
         {
+            OcultarHora();
             if (pn_Central.Controls.Count > 0)
             {
                 pn_Central.Controls.RemoveAt(0);
@@ -222,6 +236,13 @@ namespace SistemaParqueoAdministracion.Forms
             this.pn_Central.Controls.Add(fh);
             this.pn_Central.Tag = fh;
             fh.Show();
+            MostrarHora();
+        }
+
+        private void hora_timer_Tick(object sender, EventArgs e)
+        {   
+            hora_lb.Text = DateTime.Now.ToString("hh:mm:ss tt");
+            fecha_lb.Text = DateTime.Now.Date.ToString("dddd,dd MMMM yyyy", CultureInfo.CreateSpecificCulture("es-DO"));
         }
     }
 }

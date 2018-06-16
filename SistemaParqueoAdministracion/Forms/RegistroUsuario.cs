@@ -70,7 +70,6 @@ namespace SistemaParqueoAdministracion.Forms
             LlenarGrid();
             FillCombouserType();
             rbActivo.Checked = true;
-            Users_dtg.DefaultCellStyle.Font = new Font("Microsoft Sans Serif", 8);
             panel3.Location = new Point(this.ClientSize.Width / 2 - panel3.Size.Width / 2,
                 this.ClientSize.Height / 2 - panel3.Size.Height / 2);
             panel3.Anchor = AnchorStyles.None; 
@@ -87,18 +86,20 @@ namespace SistemaParqueoAdministracion.Forms
             confirmarClave_txt.Clear();
             registrar_panel.Visible = true;
             update_panel.Visible = false;
+            //clave_anterior.Validar = true;
+            //Clave_txt.Validar = true;
         }
         private void exit_btn_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea Salir?", "Sistema de Control de Parqueo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-            {
+
                 this.Dispose();
                 this.Close();
-            }
+            
         }
 
         private void cancel_btn_Click(object sender, EventArgs e)
         {
+            errorProvider1.Clear();
             Limpiar();
             Program.Evento = 0;
             Program.id = 0;
@@ -110,7 +111,7 @@ namespace SistemaParqueoAdministracion.Forms
         {
 
             errorProvider1.Clear();
-            if (Utilidades.ValidarForm(this, errorProvider1) == false)
+            if (Utilidades.ValidarForm2(DatosUser_pn, errorProvider1) == false)
             {
                 return;
             }
@@ -199,19 +200,21 @@ namespace SistemaParqueoAdministracion.Forms
                         mensaje = U.Actualizar();
                     }
 
-                    
-                   
-                    
+
+
+
                     if (mensaje == "1" && error==0)
                     {
                         MessageBox.Show("Actualizado", "Sistema de Parqueo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         LlenarGrid();
                         Limpiar();
+                        Program.Evento = 0;
+
                     }
                     else
                     {
                         MessageBox.Show("Ha ocurrido un error", "Sistema de Parqueo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        Limpiar();
+                        //Limpiar();
                     }
                 }
             }
@@ -245,6 +248,8 @@ namespace SistemaParqueoAdministracion.Forms
             //confirmarClave_txt.Text = Users_dtg.CurrentRow.Cells[3].Value.ToString();
             tipoUsuario_cb.Text = Users_dtg.CurrentRow.Cells[4].Value.ToString();
             Program.Evento = 1;
+            //clave_anterior.Validar = false;
+            //Clave_txt.Validar = false;
         }
 
         private void inactivate_btn_Click(object sender, EventArgs e)
@@ -289,13 +294,24 @@ namespace SistemaParqueoAdministracion.Forms
                 clave_anterior.Enabled = true;
                 confirmarClaveUpd_txt.Enabled = true;
                 claveNuevaUpd_txt.Enabled = true;
+                //clave_anterior.Validar = true;
+                //confirmarClaveUpd_txt.Validar = true;
+                //claveNuevaUpd_txt.Validar = true;
             }
             else
             {
                 clave_anterior.Enabled = false;
                 confirmarClaveUpd_txt.Enabled = false;
                 claveNuevaUpd_txt.Enabled = false;
+                //clave_anterior.Validar = false;
+                //confirmarClaveUpd_txt.Validar = false;
+                //claveNuevaUpd_txt.Validar = false;
             }
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
