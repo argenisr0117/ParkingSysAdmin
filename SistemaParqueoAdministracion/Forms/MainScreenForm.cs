@@ -29,16 +29,16 @@ namespace SistemaParqueoAdministracion.Forms
             RegistroTipoUsuario form = new RegistroTipoUsuario();
             form.ShowDialog();
         }
-        private void OcultarHora()
-        {
-            hora_lb.Visible = false;
-            fecha_lb.Visible = false;
-        }
-        private void MostrarHora()
-        {
-            hora_lb.Visible = true;
-            fecha_lb.Visible = true;
-        }
+        //private void OcultarHora()
+        //{
+        //    hora_lb.Visible = false;
+        //    fecha_lab.Visible = false;
+        //}
+        //public void MostrarHora()
+        //{
+        //    fecha_lab.Visible = true;
+        //    hora_lb.Visible = true;
+        //}
         private void agregarUsuario_btn_Click(object sender, EventArgs e)
         {
             //OcultarHora();
@@ -115,7 +115,8 @@ namespace SistemaParqueoAdministracion.Forms
                     pb_CuentaUsuario.Size = new Size(96, 73);
 
                 }
-            }       
+            }
+            //MostrarHora();       
         }
 
         private void btn_Close_Click(object sender, EventArgs e)
@@ -225,7 +226,7 @@ namespace SistemaParqueoAdministracion.Forms
 
         private void ABrirFormulario (Form fh)
         {
-            OcultarHora();
+            //OcultarHora();
             if (pn_Central.Controls.Count > 0)
             {
                 pn_Central.Controls.RemoveAt(0);
@@ -236,13 +237,14 @@ namespace SistemaParqueoAdministracion.Forms
             this.pn_Central.Controls.Add(fh);
             this.pn_Central.Tag = fh;
             fh.Show();
-            MostrarHora();
+            //MostrarHora();
         }
 
         private void hora_timer_Tick(object sender, EventArgs e)
         {   
             hora_lb.Text = DateTime.Now.ToString("hh:mm:ss tt");
-            fecha_lb.Text = DateTime.Now.Date.ToString("dddd,dd MMMM yyyy", CultureInfo.CreateSpecificCulture("es-DO"));
+            fecha_lab.Text = DateTime.Now.Date.ToString("dddd,dd MMMM yyyy", CultureInfo.CreateSpecificCulture("es-DO"));
+
         }
     }
 }

@@ -41,63 +41,63 @@
             this.label5 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.Users_dtg = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.rbInactivo = new System.Windows.Forms.RadioButton();
-            this.rbActivo = new System.Windows.Forms.RadioButton();
-            this.update_panel = new System.Windows.Forms.Panel();
-            this.changePass_chbox = new System.Windows.Forms.CheckBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape6 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape7 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.registrar_panel = new System.Windows.Forms.Panel();
-            this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape8 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape9 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.DatosUser_pn = new System.Windows.Forms.Panel();
-            this.shapeContainer4 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.shapeContainer5 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.exit_btn = new System.Windows.Forms.Button();
-            this.saveSettings_btn = new System.Windows.Forms.Button();
-            this.inactivate_btn = new System.Windows.Forms.Button();
-            this.cancel_btn = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape10 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape11 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.shapeContainer6 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.idusuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.rbInactivo = new System.Windows.Forms.RadioButton();
+            this.rbActivo = new System.Windows.Forms.RadioButton();
+            this.update_panel = new System.Windows.Forms.Panel();
+            this.changePass_chbox = new System.Windows.Forms.CheckBox();
             this.claveNuevaUpd_txt = new SistemaParqueoAdministracion.Controles.textbox(this.components);
+            this.label10 = new System.Windows.Forms.Label();
             this.confirmarClaveUpd_txt = new SistemaParqueoAdministracion.Controles.textbox(this.components);
+            this.label9 = new System.Windows.Forms.Label();
             this.clave_anterior = new SistemaParqueoAdministracion.Controles.textbox(this.components);
-            this.Nombre_txt = new SistemaParqueoAdministracion.Controles.textbox(this.components);
-            this.Usuario_txt = new SistemaParqueoAdministracion.Controles.textbox(this.components);
+            this.label8 = new System.Windows.Forms.Label();
+            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape6 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape7 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.registrar_panel = new System.Windows.Forms.Panel();
             this.Clave_txt = new SistemaParqueoAdministracion.Controles.textbox(this.components);
             this.confirmarClave_txt = new SistemaParqueoAdministracion.Controles.textbox(this.components);
+            this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape8 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape9 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape10 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.shapeContainer5 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.DatosUser_pn = new System.Windows.Forms.Panel();
+            this.Nombre_txt = new SistemaParqueoAdministracion.Controles.textbox(this.components);
+            this.Usuario_txt = new SistemaParqueoAdministracion.Controles.textbox(this.components);
+            this.shapeContainer4 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.exit_btn = new System.Windows.Forms.Button();
+            this.saveSettings_btn = new System.Windows.Forms.Button();
+            this.inactivate_btn = new System.Windows.Forms.Button();
+            this.cancel_btn = new System.Windows.Forms.Button();
+            this.shapeContainer6 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape11 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Users_dtg)).BeginInit();
             this.panel1.SuspendLayout();
             this.update_panel.SuspendLayout();
             this.registrar_panel.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.DatosUser_pn.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.DatosUser_pn.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -211,7 +211,7 @@
             this.estado});
             this.Users_dtg.EnableHeadersVisualStyles = false;
             this.Users_dtg.GridColor = System.Drawing.Color.LightSteelBlue;
-            this.Users_dtg.Location = new System.Drawing.Point(439, 127);
+            this.Users_dtg.Location = new System.Drawing.Point(434, 124);
             this.Users_dtg.MultiSelect = false;
             this.Users_dtg.Name = "Users_dtg";
             this.Users_dtg.ReadOnly = true;
@@ -233,15 +233,60 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
             this.Users_dtg.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.Users_dtg.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Users_dtg.Size = new System.Drawing.Size(356, 248);
+            this.Users_dtg.Size = new System.Drawing.Size(350, 248);
             this.Users_dtg.TabIndex = 159;
             this.Users_dtg.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Users_dtg_CellDoubleClick);
+            // 
+            // idusuario
+            // 
+            this.idusuario.HeaderText = "IDUSUARIO";
+            this.idusuario.Name = "idusuario";
+            this.idusuario.ReadOnly = true;
+            this.idusuario.Width = 89;
+            // 
+            // nombre
+            // 
+            this.nombre.FillWeight = 150F;
+            this.nombre.HeaderText = "NOMBRE";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            this.nombre.Width = 78;
+            // 
+            // usuario
+            // 
+            this.usuario.HeaderText = "USUARIO";
+            this.usuario.Name = "usuario";
+            this.usuario.ReadOnly = true;
+            this.usuario.Width = 78;
+            // 
+            // clave
+            // 
+            this.clave.HeaderText = "CLAVE";
+            this.clave.Name = "clave";
+            this.clave.ReadOnly = true;
+            this.clave.Visible = false;
+            this.clave.Width = 63;
+            // 
+            // tipo
+            // 
+            this.tipo.HeaderText = "TIPO";
+            this.tipo.Name = "tipo";
+            this.tipo.ReadOnly = true;
+            this.tipo.Width = 54;
+            // 
+            // estado
+            // 
+            this.estado.HeaderText = "ESTADO";
+            this.estado.Name = "estado";
+            this.estado.ReadOnly = true;
+            this.estado.Visible = false;
+            this.estado.Width = 71;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.rbInactivo);
             this.panel1.Controls.Add(this.rbActivo);
-            this.panel1.Location = new System.Drawing.Point(631, 97);
+            this.panel1.Location = new System.Drawing.Point(620, 97);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(164, 24);
             this.panel1.TabIndex = 164;
@@ -303,6 +348,18 @@
             this.changePass_chbox.UseVisualStyleBackColor = true;
             this.changePass_chbox.CheckedChanged += new System.EventHandler(this.changePass_chbox_CheckedChanged);
             // 
+            // claveNuevaUpd_txt
+            // 
+            this.claveNuevaUpd_txt.BackColor = System.Drawing.Color.White;
+            this.claveNuevaUpd_txt.Enabled = false;
+            this.claveNuevaUpd_txt.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.claveNuevaUpd_txt.Location = new System.Drawing.Point(128, 60);
+            this.claveNuevaUpd_txt.Name = "claveNuevaUpd_txt";
+            this.claveNuevaUpd_txt.PasswordChar = '*';
+            this.claveNuevaUpd_txt.Size = new System.Drawing.Size(198, 22);
+            this.claveNuevaUpd_txt.TabIndex = 173;
+            this.claveNuevaUpd_txt.Validar = true;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -314,6 +371,18 @@
             this.label10.TabIndex = 172;
             this.label10.Text = "CLAVE NUEVA:";
             // 
+            // confirmarClaveUpd_txt
+            // 
+            this.confirmarClaveUpd_txt.BackColor = System.Drawing.Color.White;
+            this.confirmarClaveUpd_txt.Enabled = false;
+            this.confirmarClaveUpd_txt.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmarClaveUpd_txt.Location = new System.Drawing.Point(128, 90);
+            this.confirmarClaveUpd_txt.Name = "confirmarClaveUpd_txt";
+            this.confirmarClaveUpd_txt.PasswordChar = '*';
+            this.confirmarClaveUpd_txt.Size = new System.Drawing.Size(198, 22);
+            this.confirmarClaveUpd_txt.TabIndex = 171;
+            this.confirmarClaveUpd_txt.Validar = true;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -324,6 +393,18 @@
             this.label9.Size = new System.Drawing.Size(108, 13);
             this.label9.TabIndex = 170;
             this.label9.Text = "CONFIRMAR CLAVE:";
+            // 
+            // clave_anterior
+            // 
+            this.clave_anterior.BackColor = System.Drawing.Color.White;
+            this.clave_anterior.Enabled = false;
+            this.clave_anterior.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clave_anterior.Location = new System.Drawing.Point(128, 27);
+            this.clave_anterior.Name = "clave_anterior";
+            this.clave_anterior.PasswordChar = '*';
+            this.clave_anterior.Size = new System.Drawing.Size(198, 22);
+            this.clave_anterior.TabIndex = 169;
+            this.clave_anterior.Validar = true;
             // 
             // label8
             // 
@@ -394,6 +475,28 @@
             this.registrar_panel.Size = new System.Drawing.Size(370, 72);
             this.registrar_panel.TabIndex = 168;
             // 
+            // Clave_txt
+            // 
+            this.Clave_txt.BackColor = System.Drawing.Color.White;
+            this.Clave_txt.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clave_txt.Location = new System.Drawing.Point(128, 7);
+            this.Clave_txt.Name = "Clave_txt";
+            this.Clave_txt.PasswordChar = '*';
+            this.Clave_txt.Size = new System.Drawing.Size(198, 22);
+            this.Clave_txt.TabIndex = 29;
+            this.Clave_txt.Validar = true;
+            // 
+            // confirmarClave_txt
+            // 
+            this.confirmarClave_txt.BackColor = System.Drawing.Color.White;
+            this.confirmarClave_txt.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmarClave_txt.Location = new System.Drawing.Point(128, 39);
+            this.confirmarClave_txt.Name = "confirmarClave_txt";
+            this.confirmarClave_txt.PasswordChar = '*';
+            this.confirmarClave_txt.Size = new System.Drawing.Size(198, 22);
+            this.confirmarClave_txt.TabIndex = 31;
+            this.confirmarClave_txt.Validar = true;
+            // 
             // shapeContainer3
             // 
             this.shapeContainer3.Location = new System.Drawing.Point(0, 0);
@@ -431,6 +534,7 @@
             // panel3
             // 
             this.panel3.AutoSize = true;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.update_panel);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
@@ -449,7 +553,75 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(843, 622);
             this.panel3.TabIndex = 169;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.shapeContainer1);
+            this.panel5.Location = new System.Drawing.Point(479, 30);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(300, 57);
+            this.panel5.TabIndex = 172;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.label7.Location = new System.Drawing.Point(32, 6);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(212, 25);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "LISTADO DE USUARIOS";
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape10});
+            this.shapeContainer1.Size = new System.Drawing.Size(300, 57);
+            this.shapeContainer1.TabIndex = 25;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape10
+            // 
+            this.lineShape10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.lineShape10.Name = "lineShape1";
+            this.lineShape10.X1 = 26;
+            this.lineShape10.X2 = 250;
+            this.lineShape10.Y1 = 35;
+            this.lineShape10.Y2 = 35;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.shapeContainer5);
+            this.panel4.Location = new System.Drawing.Point(37, 32);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(317, 57);
+            this.panel4.TabIndex = 171;
+            // 
+            // shapeContainer5
+            // 
+            this.shapeContainer5.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer5.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer5.Name = "shapeContainer5";
+            this.shapeContainer5.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape1});
+            this.shapeContainer5.Size = new System.Drawing.Size(317, 57);
+            this.shapeContainer5.TabIndex = 25;
+            this.shapeContainer5.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 46;
+            this.lineShape1.X2 = 270;
+            this.lineShape1.Y1 = 35;
+            this.lineShape1.Y2 = 35;
             // 
             // DatosUser_pn
             // 
@@ -464,6 +636,29 @@
             this.DatosUser_pn.Name = "DatosUser_pn";
             this.DatosUser_pn.Size = new System.Drawing.Size(370, 108);
             this.DatosUser_pn.TabIndex = 170;
+            // 
+            // Nombre_txt
+            // 
+            this.Nombre_txt.BackColor = System.Drawing.Color.White;
+            this.Nombre_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Nombre_txt.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_txt.Location = new System.Drawing.Point(128, 3);
+            this.Nombre_txt.Multiline = true;
+            this.Nombre_txt.Name = "Nombre_txt";
+            this.Nombre_txt.Size = new System.Drawing.Size(198, 20);
+            this.Nombre_txt.TabIndex = 25;
+            this.Nombre_txt.Validar = true;
+            // 
+            // Usuario_txt
+            // 
+            this.Usuario_txt.BackColor = System.Drawing.Color.White;
+            this.Usuario_txt.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Usuario_txt.Location = new System.Drawing.Point(128, 68);
+            this.Usuario_txt.Multiline = true;
+            this.Usuario_txt.Name = "Usuario_txt";
+            this.Usuario_txt.Size = new System.Drawing.Size(198, 20);
+            this.Usuario_txt.TabIndex = 27;
+            this.Usuario_txt.Validar = true;
             // 
             // shapeContainer4
             // 
@@ -511,35 +706,6 @@
             this.lineShape3.Y1 = 23;
             this.lineShape3.Y2 = 23;
             // 
-            // lineShape1
-            // 
-            this.lineShape1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 46;
-            this.lineShape1.X2 = 270;
-            this.lineShape1.Y1 = 35;
-            this.lineShape1.Y2 = 35;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.shapeContainer5);
-            this.panel4.Location = new System.Drawing.Point(37, 32);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(317, 57);
-            this.panel4.TabIndex = 171;
-            // 
-            // shapeContainer5
-            // 
-            this.shapeContainer5.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer5.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer5.Name = "shapeContainer5";
-            this.shapeContainer5.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape1});
-            this.shapeContainer5.Size = new System.Drawing.Size(317, 57);
-            this.shapeContainer5.TabIndex = 25;
-            this.shapeContainer5.TabStop = false;
-            // 
             // exit_btn
             // 
             this.exit_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -554,7 +720,7 @@
             this.exit_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
             this.exit_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.close;
             this.exit_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.exit_btn.Location = new System.Drawing.Point(795, 18);
+            this.exit_btn.Location = new System.Drawing.Point(793, 18);
             this.exit_btn.Name = "exit_btn";
             this.exit_btn.Size = new System.Drawing.Size(36, 30);
             this.exit_btn.TabIndex = 162;
@@ -620,45 +786,16 @@
             this.cancel_btn.UseVisualStyleBackColor = false;
             this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
             // 
-            // panel5
+            // shapeContainer6
             // 
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.shapeContainer1);
-            this.panel5.Location = new System.Drawing.Point(479, 30);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(300, 57);
-            this.panel5.TabIndex = 172;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.label7.Location = new System.Drawing.Point(32, 6);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(212, 25);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "LISTADO DE USUARIOS";
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape10});
-            this.shapeContainer1.Size = new System.Drawing.Size(300, 57);
-            this.shapeContainer1.TabIndex = 25;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape10
-            // 
-            this.lineShape10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.lineShape10.Name = "lineShape1";
-            this.lineShape10.X1 = 26;
-            this.lineShape10.X2 = 250;
-            this.lineShape10.Y1 = 35;
-            this.lineShape10.Y2 = 35;
+            this.shapeContainer6.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer6.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer6.Name = "shapeContainer6";
+            this.shapeContainer6.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape11});
+            this.shapeContainer6.Size = new System.Drawing.Size(841, 620);
+            this.shapeContainer6.TabIndex = 173;
+            this.shapeContainer6.TabStop = false;
             // 
             // lineShape11
             // 
@@ -668,143 +805,6 @@
             this.lineShape11.X2 = 409;
             this.lineShape11.Y1 = 1;
             this.lineShape11.Y2 = 620;
-            // 
-            // shapeContainer6
-            // 
-            this.shapeContainer6.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer6.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer6.Name = "shapeContainer6";
-            this.shapeContainer6.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape11});
-            this.shapeContainer6.Size = new System.Drawing.Size(843, 622);
-            this.shapeContainer6.TabIndex = 173;
-            this.shapeContainer6.TabStop = false;
-            // 
-            // idusuario
-            // 
-            this.idusuario.HeaderText = "IDUSUARIO";
-            this.idusuario.Name = "idusuario";
-            this.idusuario.ReadOnly = true;
-            this.idusuario.Width = 89;
-            // 
-            // nombre
-            // 
-            this.nombre.FillWeight = 150F;
-            this.nombre.HeaderText = "NOMBRE";
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            this.nombre.Width = 78;
-            // 
-            // usuario
-            // 
-            this.usuario.HeaderText = "USUARIO";
-            this.usuario.Name = "usuario";
-            this.usuario.ReadOnly = true;
-            this.usuario.Width = 78;
-            // 
-            // clave
-            // 
-            this.clave.HeaderText = "CLAVE";
-            this.clave.Name = "clave";
-            this.clave.ReadOnly = true;
-            this.clave.Visible = false;
-            this.clave.Width = 63;
-            // 
-            // tipo
-            // 
-            this.tipo.HeaderText = "TIPO";
-            this.tipo.Name = "tipo";
-            this.tipo.ReadOnly = true;
-            this.tipo.Width = 54;
-            // 
-            // estado
-            // 
-            this.estado.HeaderText = "ESTADO";
-            this.estado.Name = "estado";
-            this.estado.ReadOnly = true;
-            this.estado.Visible = false;
-            this.estado.Width = 71;
-            // 
-            // claveNuevaUpd_txt
-            // 
-            this.claveNuevaUpd_txt.BackColor = System.Drawing.Color.White;
-            this.claveNuevaUpd_txt.Enabled = false;
-            this.claveNuevaUpd_txt.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.claveNuevaUpd_txt.Location = new System.Drawing.Point(128, 60);
-            this.claveNuevaUpd_txt.Name = "claveNuevaUpd_txt";
-            this.claveNuevaUpd_txt.PasswordChar = '*';
-            this.claveNuevaUpd_txt.Size = new System.Drawing.Size(198, 22);
-            this.claveNuevaUpd_txt.TabIndex = 173;
-            this.claveNuevaUpd_txt.Validar = true;
-            // 
-            // confirmarClaveUpd_txt
-            // 
-            this.confirmarClaveUpd_txt.BackColor = System.Drawing.Color.White;
-            this.confirmarClaveUpd_txt.Enabled = false;
-            this.confirmarClaveUpd_txt.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmarClaveUpd_txt.Location = new System.Drawing.Point(128, 90);
-            this.confirmarClaveUpd_txt.Name = "confirmarClaveUpd_txt";
-            this.confirmarClaveUpd_txt.PasswordChar = '*';
-            this.confirmarClaveUpd_txt.Size = new System.Drawing.Size(198, 22);
-            this.confirmarClaveUpd_txt.TabIndex = 171;
-            this.confirmarClaveUpd_txt.Validar = true;
-            // 
-            // clave_anterior
-            // 
-            this.clave_anterior.BackColor = System.Drawing.Color.White;
-            this.clave_anterior.Enabled = false;
-            this.clave_anterior.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clave_anterior.Location = new System.Drawing.Point(128, 27);
-            this.clave_anterior.Name = "clave_anterior";
-            this.clave_anterior.PasswordChar = '*';
-            this.clave_anterior.Size = new System.Drawing.Size(198, 22);
-            this.clave_anterior.TabIndex = 169;
-            this.clave_anterior.Validar = true;
-            // 
-            // Nombre_txt
-            // 
-            this.Nombre_txt.BackColor = System.Drawing.Color.White;
-            this.Nombre_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Nombre_txt.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nombre_txt.Location = new System.Drawing.Point(128, 3);
-            this.Nombre_txt.Multiline = true;
-            this.Nombre_txt.Name = "Nombre_txt";
-            this.Nombre_txt.Size = new System.Drawing.Size(198, 20);
-            this.Nombre_txt.TabIndex = 25;
-            this.Nombre_txt.Validar = true;
-            // 
-            // Usuario_txt
-            // 
-            this.Usuario_txt.BackColor = System.Drawing.Color.White;
-            this.Usuario_txt.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Usuario_txt.Location = new System.Drawing.Point(128, 68);
-            this.Usuario_txt.Multiline = true;
-            this.Usuario_txt.Name = "Usuario_txt";
-            this.Usuario_txt.Size = new System.Drawing.Size(198, 20);
-            this.Usuario_txt.TabIndex = 27;
-            this.Usuario_txt.Validar = true;
-            // 
-            // Clave_txt
-            // 
-            this.Clave_txt.BackColor = System.Drawing.Color.White;
-            this.Clave_txt.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clave_txt.Location = new System.Drawing.Point(128, 7);
-            this.Clave_txt.Name = "Clave_txt";
-            this.Clave_txt.PasswordChar = '*';
-            this.Clave_txt.Size = new System.Drawing.Size(198, 22);
-            this.Clave_txt.TabIndex = 29;
-            this.Clave_txt.Validar = true;
-            // 
-            // confirmarClave_txt
-            // 
-            this.confirmarClave_txt.BackColor = System.Drawing.Color.White;
-            this.confirmarClave_txt.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmarClave_txt.Location = new System.Drawing.Point(128, 39);
-            this.confirmarClave_txt.Name = "confirmarClave_txt";
-            this.confirmarClave_txt.PasswordChar = '*';
-            this.confirmarClave_txt.Size = new System.Drawing.Size(198, 22);
-            this.confirmarClave_txt.TabIndex = 31;
-            this.confirmarClave_txt.Validar = true;
             // 
             // RegistroUsuario
             // 
@@ -829,12 +829,12 @@
             this.registrar_panel.ResumeLayout(false);
             this.registrar_panel.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.DatosUser_pn.ResumeLayout(false);
-            this.DatosUser_pn.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.DatosUser_pn.ResumeLayout(false);
+            this.DatosUser_pn.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

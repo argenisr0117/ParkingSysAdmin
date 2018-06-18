@@ -204,7 +204,7 @@
             this.exit_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
             this.exit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.exit;
+            this.exit_btn.Image = Properties.Resources.exit;
             this.exit_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.exit_btn.Location = new System.Drawing.Point(387, 265);
             this.exit_btn.Name = "exit_btn";

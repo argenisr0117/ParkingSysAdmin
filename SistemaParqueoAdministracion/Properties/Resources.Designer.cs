@@ -123,6 +123,16 @@ namespace SistemaParqueoAdministracion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap car_key {
+            get {
+                object obj = ResourceManager.GetObject("car-key", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chart {
             get {
                 object obj = ResourceManager.GetObject("chart", resourceCulture);
@@ -263,6 +273,16 @@ namespace SistemaParqueoAdministracion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logo11 {
+            get {
+                object obj = ResourceManager.GetObject("Logo11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logout__1_ {
             get {
                 object obj = ResourceManager.GetObject("logout (1)", resourceCulture);
@@ -286,6 +306,16 @@ namespace SistemaParqueoAdministracion.Properties {
         internal static System.Drawing.Bitmap man_user {
             get {
                 object obj = ResourceManager.GetObject("man-user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap man_user__1_ {
+            get {
+                object obj = ResourceManager.GetObject("man-user (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -336,6 +366,16 @@ namespace SistemaParqueoAdministracion.Properties {
         internal static System.Drawing.Bitmap multiple_users_silhouette {
             get {
                 object obj = ResourceManager.GetObject("multiple-users-silhouette", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap parked_car {
+            get {
+                object obj = ResourceManager.GetObject("parked-car", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

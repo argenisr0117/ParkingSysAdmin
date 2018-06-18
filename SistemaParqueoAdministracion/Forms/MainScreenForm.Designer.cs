@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainScreenForm));
             this.pn_MenuVertical = new System.Windows.Forms.Panel();
             this.Usuario_lbl = new System.Windows.Forms.Label();
             this.tipoUsuario_lbl = new System.Windows.Forms.Label();
@@ -40,6 +41,8 @@
             this.pn_Superior = new System.Windows.Forms.Panel();
             this.notActivated_lbl = new System.Windows.Forms.Label();
             this.pn_Central = new System.Windows.Forms.Panel();
+            this.hora_lb = new System.Windows.Forms.Label();
+            this.hora_timer = new System.Windows.Forms.Timer(this.components);
             this.btn_Restaurar = new System.Windows.Forms.PictureBox();
             this.mENUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aCTIVARSOFTWAREToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,9 +62,7 @@
             this.agregarUsuario_btn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tipoUsuario_btn = new System.Windows.Forms.Button();
-            this.hora_timer = new System.Windows.Forms.Timer(this.components);
-            this.hora_lb = new System.Windows.Forms.Label();
-            this.fecha_lb = new System.Windows.Forms.Label();
+            this.fecha_lab = new System.Windows.Forms.Label();
             this.pn_MenuVertical.SuspendLayout();
             this.pn_ReporteSubmenu.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -200,13 +201,29 @@
             // pn_Central
             // 
             this.pn_Central.BackColor = System.Drawing.Color.White;
-            this.pn_Central.Controls.Add(this.fecha_lb);
+            this.pn_Central.Controls.Add(this.fecha_lab);
             this.pn_Central.Controls.Add(this.hora_lb);
             this.pn_Central.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_Central.Location = new System.Drawing.Point(234, 42);
             this.pn_Central.Name = "pn_Central";
             this.pn_Central.Size = new System.Drawing.Size(843, 580);
             this.pn_Central.TabIndex = 42;
+            // 
+            // hora_lb
+            // 
+            this.hora_lb.AutoSize = true;
+            this.hora_lb.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hora_lb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.hora_lb.Location = new System.Drawing.Point(161, 247);
+            this.hora_lb.Name = "hora_lb";
+            this.hora_lb.Size = new System.Drawing.Size(54, 86);
+            this.hora_lb.TabIndex = 0;
+            this.hora_lb.Text = ".";
+            // 
+            // hora_timer
+            // 
+            this.hora_timer.Interval = 1000;
+            this.hora_timer.Tick += new System.EventHandler(this.hora_timer_Tick);
             // 
             // btn_Restaurar
             // 
@@ -517,32 +534,14 @@
             this.tipoUsuario_btn.UseVisualStyleBackColor = false;
             this.tipoUsuario_btn.Click += new System.EventHandler(this.tipoUsuario_btn_Click);
             // 
-            // hora_timer
+            // fecha_lab
             // 
-            this.hora_timer.Interval = 1000;
-            this.hora_timer.Tick += new System.EventHandler(this.hora_timer_Tick);
-            // 
-            // hora_lb
-            // 
-            this.hora_lb.AutoSize = true;
-            this.hora_lb.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hora_lb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.hora_lb.Location = new System.Drawing.Point(161, 247);
-            this.hora_lb.Name = "hora_lb";
-            this.hora_lb.Size = new System.Drawing.Size(54, 86);
-            this.hora_lb.TabIndex = 0;
-            this.hora_lb.Text = ".";
-            // 
-            // fecha_lb
-            // 
-            this.fecha_lb.AutoSize = true;
-            this.fecha_lb.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fecha_lb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.fecha_lb.Location = new System.Drawing.Point(168, 345);
-            this.fecha_lb.Name = "fecha_lb";
-            this.fecha_lb.Size = new System.Drawing.Size(29, 45);
-            this.fecha_lb.TabIndex = 1;
-            this.fecha_lb.Text = ".";
+            this.fecha_lab.AutoSize = true;
+            this.fecha_lab.Location = new System.Drawing.Point(180, 269);
+            this.fecha_lab.Name = "fecha_lab";
+            this.fecha_lab.Size = new System.Drawing.Size(35, 13);
+            this.fecha_lab.TabIndex = 1;
+            this.fecha_lab.Text = "label1";
             // 
             // MainScreenForm
             // 
@@ -554,6 +553,7 @@
             this.Controls.Add(this.pn_Superior);
             this.Controls.Add(this.pn_MenuVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "MainScreenForm";
@@ -611,8 +611,8 @@
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.Button cerrarSesion_btn;
-        private System.Windows.Forms.Label hora_lb;
         private System.Windows.Forms.Timer hora_timer;
-        private System.Windows.Forms.Label fecha_lb;
+        private System.Windows.Forms.Label hora_lb;
+        private System.Windows.Forms.Label fecha_lab;
     }
 }

@@ -18,6 +18,7 @@ namespace SistemaParqueoAdministracion.Forms
         }
         TipoUsuario T = new TipoUsuario();
         Usuario U = new Usuario();
+        MainScreenForm obj = new MainScreenForm();
         private void FillCombouserType()
         {
             try
@@ -34,11 +35,11 @@ namespace SistemaParqueoAdministracion.Forms
         private void LlenarGrid()
         {
             DataTable dt = new DataTable();
-            if(rbActivo.Checked)
+            if (rbActivo.Checked)
             {
                 U.Estado = true;
             }
-            else if(rbInactivo.Checked)
+            else if (rbInactivo.Checked)
             {
                 U.Estado = false;
             }
@@ -65,6 +66,7 @@ namespace SistemaParqueoAdministracion.Forms
         }
         private void RegistroUsuario_Load(object sender, EventArgs e)
         {
+            this.TopMost = true;
             Program.Evento = 0;
             Program.id = 0;
             LlenarGrid();
@@ -72,7 +74,7 @@ namespace SistemaParqueoAdministracion.Forms
             rbActivo.Checked = true;
             panel3.Location = new Point(this.ClientSize.Width / 2 - panel3.Size.Width / 2,
                 this.ClientSize.Height / 2 - panel3.Size.Height / 2);
-            panel3.Anchor = AnchorStyles.None; 
+            panel3.Anchor = AnchorStyles.None;
         }
 
         private void Limpiar()
@@ -91,10 +93,10 @@ namespace SistemaParqueoAdministracion.Forms
         }
         private void exit_btn_Click(object sender, EventArgs e)
         {
+            //obj.MostrarHora();
+            this.Dispose();
+            this.Close();
 
-                this.Dispose();
-                this.Close();
-            
         }
 
         private void cancel_btn_Click(object sender, EventArgs e)
@@ -131,8 +133,8 @@ namespace SistemaParqueoAdministracion.Forms
                 }
 
             }
-            
-                
+
+
             string mensaje = "";
             try
             {
@@ -147,7 +149,7 @@ namespace SistemaParqueoAdministracion.Forms
                         mensaje = U.Registrar();
                         if (mensaje == "1")
                         {
-                            
+
                             update_panel.Visible = false;
                             registrar_panel.Visible = true;
                             MessageBox.Show("Registrado", "Sistema de Parqueo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -165,7 +167,7 @@ namespace SistemaParqueoAdministracion.Forms
                         MessageBox.Show("Claves no coinciden", "Sistema de Parqueo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
-                else if( Program.Evento==1)
+                else if (Program.Evento == 1)
                 {
                     int error = 0;
                     U.Idusuario = Program.id;
@@ -180,7 +182,7 @@ namespace SistemaParqueoAdministracion.Forms
                             error = 1;
                             MessageBox.Show("Contraseña anterior no coincide", "Sistema de Parqueo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-                        else if (claveNuevaUpd_txt.Text != confirmarClaveUpd_txt.Text) 
+                        else if (claveNuevaUpd_txt.Text != confirmarClaveUpd_txt.Text)
                         {
                             error = 1;
                             MessageBox.Show("Claves nuevas no coinciden", "Sistema de Parqueo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -190,7 +192,7 @@ namespace SistemaParqueoAdministracion.Forms
                             U.Clave = Utilidades.EncodePassword(Usuario_txt.Text + claveNuevaUpd_txt.Text);
                             mensaje = U.Actualizar();
                         }
-                              
+
 
                     }
                     else
@@ -203,7 +205,7 @@ namespace SistemaParqueoAdministracion.Forms
 
 
 
-                    if (mensaje == "1" && error==0)
+                    if (mensaje == "1" && error == 0)
                     {
                         MessageBox.Show("Actualizado", "Sistema de Parqueo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         LlenarGrid();
@@ -218,7 +220,7 @@ namespace SistemaParqueoAdministracion.Forms
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -240,7 +242,7 @@ namespace SistemaParqueoAdministracion.Forms
         {
             registrar_panel.Visible = false;
             update_panel.Visible = true;
-            
+
             Program.id = Convert.ToInt32(Users_dtg.CurrentRow.Cells[0].Value);
             Nombre_txt.Text = Users_dtg.CurrentRow.Cells[1].Value.ToString();
             Usuario_txt.Text = Users_dtg.CurrentRow.Cells[2].Value.ToString();
@@ -280,11 +282,11 @@ namespace SistemaParqueoAdministracion.Forms
                     MessageBox.Show("Debe seleccionar un registro", "Sistema de Parqueo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            
+
         }
 
         private void changePass_chbox_CheckedChanged(object sender, EventArgs e)
@@ -307,11 +309,6 @@ namespace SistemaParqueoAdministracion.Forms
                 //confirmarClaveUpd_txt.Validar = false;
                 //claveNuevaUpd_txt.Validar = false;
             }
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
