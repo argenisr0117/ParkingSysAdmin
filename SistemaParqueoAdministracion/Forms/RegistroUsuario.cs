@@ -93,10 +93,13 @@ namespace SistemaParqueoAdministracion.Forms
         }
         private void exit_btn_Click(object sender, EventArgs e)
         {
-            //obj.MostrarHora();
+            //this.Hide();
+            //obj.BringToFront();
+            Program.form = 1;
+            //obj.abrirform_timer_Tick(e, e);
             this.Dispose();
             this.Close();
-
+            //obj.introform_btn_Click(e, e);
         }
 
         private void cancel_btn_Click(object sender, EventArgs e)

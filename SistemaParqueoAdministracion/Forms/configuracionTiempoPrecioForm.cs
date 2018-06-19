@@ -114,11 +114,9 @@ namespace SistemaParqueoAdministracion.Forms
 
         private void exit_btn_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea Salir?", "Sistema de Control de Parqueo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-            {
+            Program.form = 1;    
                 this.Dispose();
                 this.Close();
-            }
         }
 
         private void dtgTiempoPrecio_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

@@ -283,6 +283,16 @@ namespace SistemaParqueoAdministracion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logo5 {
+            get {
+                object obj = ResourceManager.GetObject("Logo5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logout__1_ {
             get {
                 object obj = ResourceManager.GetObject("logout (1)", resourceCulture);
@@ -366,6 +376,16 @@ namespace SistemaParqueoAdministracion.Properties {
         internal static System.Drawing.Bitmap multiple_users_silhouette {
             get {
                 object obj = ResourceManager.GetObject("multiple-users-silhouette", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap open_lock {
+            get {
+                object obj = ResourceManager.GetObject("open-lock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtTipoUsuario = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.verStatusEntrada_chbox = new System.Windows.Forms.CheckBox();
             this.cerrarEntrada_chbox = new System.Windows.Forms.CheckBox();
             this.tiempoPrecio_chbox = new System.Windows.Forms.CheckBox();
@@ -41,64 +41,51 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.agregarUsuario_chbox = new System.Windows.Forms.CheckBox();
             this.generarReportes_chbox = new System.Windows.Forms.CheckBox();
-            this.dtgTipoUsuario = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.menu_ent_status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.menu_ent_salir = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tiempo_precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.menu_salida_cerrar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ticket_perdido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ticket_manual = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reportes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.agregar_usuarios = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.exit_btn = new System.Windows.Forms.Button();
-            this.cancel_btn = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.shapeContainer5 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape10 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape11 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.DatosUser_pn = new System.Windows.Forms.Panel();
+            this.txtTipoUsuario = new SistemaParqueoAdministracion.Controles.textbox(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.shapeContainer4 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.dtgTipoUsuario = new System.Windows.Forms.DataGridView();
             this.saveSettings_btn = new System.Windows.Forms.Button();
+            this.cancel_btn = new System.Windows.Forms.Button();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ticket_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ticket_m = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reportes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.agregar_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.DatosUser_pn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgTipoUsuario)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 51);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 16);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "TIPO USUARIO:";
-            // 
-            // txtTipoUsuario
-            // 
-            this.txtTipoUsuario.BackColor = System.Drawing.SystemColors.Info;
-            this.txtTipoUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTipoUsuario.Location = new System.Drawing.Point(149, 41);
-            this.txtTipoUsuario.Multiline = true;
-            this.txtTipoUsuario.Name = "txtTipoUsuario";
-            this.txtTipoUsuario.Size = new System.Drawing.Size(211, 37);
-            this.txtTipoUsuario.TabIndex = 20;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(105, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 16);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "REGISTRO TIPO USUARIO";
             // 
             // verStatusEntrada_chbox
             // 
             this.verStatusEntrada_chbox.AutoSize = true;
             this.verStatusEntrada_chbox.Location = new System.Drawing.Point(6, 19);
             this.verStatusEntrada_chbox.Name = "verStatusEntrada_chbox";
-            this.verStatusEntrada_chbox.Size = new System.Drawing.Size(286, 17);
+            this.verStatusEntrada_chbox.Size = new System.Drawing.Size(264, 17);
             this.verStatusEntrada_chbox.TabIndex = 22;
             this.verStatusEntrada_chbox.Text = "VER STATUS PERIFÉRICOS - ESTACION ENTRADA";
             this.verStatusEntrada_chbox.UseVisualStyleBackColor = true;
@@ -108,7 +95,7 @@
             this.cerrarEntrada_chbox.AutoSize = true;
             this.cerrarEntrada_chbox.Location = new System.Drawing.Point(6, 42);
             this.cerrarEntrada_chbox.Name = "cerrarEntrada_chbox";
-            this.cerrarEntrada_chbox.Size = new System.Drawing.Size(255, 17);
+            this.cerrarEntrada_chbox.Size = new System.Drawing.Size(243, 17);
             this.cerrarEntrada_chbox.TabIndex = 23;
             this.cerrarEntrada_chbox.Text = "CERRAR APLICACIÓN - ESTACIÓN ENTRADA";
             this.cerrarEntrada_chbox.UseVisualStyleBackColor = true;
@@ -118,7 +105,7 @@
             this.tiempoPrecio_chbox.AutoSize = true;
             this.tiempoPrecio_chbox.Location = new System.Drawing.Point(6, 134);
             this.tiempoPrecio_chbox.Name = "tiempoPrecio_chbox";
-            this.tiempoPrecio_chbox.Size = new System.Drawing.Size(202, 17);
+            this.tiempoPrecio_chbox.Size = new System.Drawing.Size(200, 17);
             this.tiempoPrecio_chbox.TabIndex = 24;
             this.tiempoPrecio_chbox.Text = "CONFIGURACIÓN PRECIO X HORA";
             this.tiempoPrecio_chbox.UseVisualStyleBackColor = true;
@@ -128,7 +115,7 @@
             this.ticketPerdido_chbox.AutoSize = true;
             this.ticketPerdido_chbox.Location = new System.Drawing.Point(6, 65);
             this.ticketPerdido_chbox.Name = "ticketPerdido_chbox";
-            this.ticketPerdido_chbox.Size = new System.Drawing.Size(286, 17);
+            this.ticketPerdido_chbox.Size = new System.Drawing.Size(266, 17);
             this.ticketPerdido_chbox.TabIndex = 25;
             this.ticketPerdido_chbox.Text = "REGISTRAR TICKET PERDIDO - ESTACIÓN SALIDA";
             this.ticketPerdido_chbox.UseVisualStyleBackColor = true;
@@ -138,7 +125,7 @@
             this.ticketManual_chbox.AutoSize = true;
             this.ticketManual_chbox.Location = new System.Drawing.Point(6, 88);
             this.ticketManual_chbox.Name = "ticketManual_chbox";
-            this.ticketManual_chbox.Size = new System.Drawing.Size(281, 17);
+            this.ticketManual_chbox.Size = new System.Drawing.Size(261, 17);
             this.ticketManual_chbox.TabIndex = 26;
             this.ticketManual_chbox.Text = "REGISTRAT TICKET MANUAL - ESTACIÓN SALIDA";
             this.ticketManual_chbox.UseVisualStyleBackColor = true;
@@ -148,7 +135,7 @@
             this.cerrarSalida_chbox.AutoSize = true;
             this.cerrarSalida_chbox.Location = new System.Drawing.Point(6, 111);
             this.cerrarSalida_chbox.Name = "cerrarSalida_chbox";
-            this.cerrarSalida_chbox.Size = new System.Drawing.Size(241, 17);
+            this.cerrarSalida_chbox.Size = new System.Drawing.Size(231, 17);
             this.cerrarSalida_chbox.TabIndex = 27;
             this.cerrarSalida_chbox.Text = "CERRAR APLICACIÓN - ESTACIÓN SALIDA";
             this.cerrarSalida_chbox.UseVisualStyleBackColor = true;
@@ -163,9 +150,10 @@
             this.groupBox1.Controls.Add(this.ticketPerdido_chbox);
             this.groupBox1.Controls.Add(this.cerrarEntrada_chbox);
             this.groupBox1.Controls.Add(this.tiempoPrecio_chbox);
-            this.groupBox1.Location = new System.Drawing.Point(15, 84);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.groupBox1.Location = new System.Drawing.Point(28, 154);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(363, 204);
+            this.groupBox1.Size = new System.Drawing.Size(370, 204);
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "PERMISOS";
@@ -175,7 +163,7 @@
             this.agregarUsuario_chbox.AutoSize = true;
             this.agregarUsuario_chbox.Location = new System.Drawing.Point(6, 180);
             this.agregarUsuario_chbox.Name = "agregarUsuario_chbox";
-            this.agregarUsuario_chbox.Size = new System.Drawing.Size(171, 17);
+            this.agregarUsuario_chbox.Size = new System.Drawing.Size(162, 17);
             this.agregarUsuario_chbox.TabIndex = 29;
             this.agregarUsuario_chbox.Text = "AÑADIR/EDITAR USUARIOS";
             this.agregarUsuario_chbox.UseVisualStyleBackColor = true;
@@ -185,101 +173,357 @@
             this.generarReportes_chbox.AutoSize = true;
             this.generarReportes_chbox.Location = new System.Drawing.Point(6, 157);
             this.generarReportes_chbox.Name = "generarReportes_chbox";
-            this.generarReportes_chbox.Size = new System.Drawing.Size(141, 17);
+            this.generarReportes_chbox.Size = new System.Drawing.Size(130, 17);
             this.generarReportes_chbox.TabIndex = 28;
             this.generarReportes_chbox.Text = "GENERAR REPORTES";
             this.generarReportes_chbox.UseVisualStyleBackColor = true;
+            // 
+            // exit_btn
+            // 
+            this.exit_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.exit_btn.BackColor = System.Drawing.Color.White;
+            this.exit_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exit_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.exit_btn.FlatAppearance.BorderSize = 0;
+            this.exit_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.exit_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.exit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit_btn.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.exit_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.close;
+            this.exit_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.exit_btn.Location = new System.Drawing.Point(795, 18);
+            this.exit_btn.Name = "exit_btn";
+            this.exit_btn.Size = new System.Drawing.Size(36, 30);
+            this.exit_btn.TabIndex = 163;
+            this.exit_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.exit_btn.UseVisualStyleBackColor = false;
+            this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.saveSettings_btn);
+            this.panel2.Controls.Add(this.cancel_btn);
+            this.panel2.Controls.Add(this.dtgTipoUsuario);
+            this.panel2.Controls.Add(this.DatosUser_pn);
+            this.panel2.Controls.Add(this.exit_btn);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.groupBox1);
+            this.panel2.Controls.Add(this.shapeContainer2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(843, 622);
+            this.panel2.TabIndex = 36;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.shapeContainer5);
+            this.panel4.Location = new System.Drawing.Point(35, 25);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(317, 57);
+            this.panel4.TabIndex = 172;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.label1.Location = new System.Drawing.Point(28, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(260, 25);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "REGISTRO DE TIPO USUARIO";
+            // 
+            // shapeContainer5
+            // 
+            this.shapeContainer5.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer5.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer5.Name = "shapeContainer5";
+            this.shapeContainer5.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape1});
+            this.shapeContainer5.Size = new System.Drawing.Size(317, 57);
+            this.shapeContainer5.TabIndex = 25;
+            this.shapeContainer5.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 33;
+            this.lineShape1.X2 = 282;
+            this.lineShape1.Y1 = 35;
+            this.lineShape1.Y2 = 35;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.shapeContainer1);
+            this.panel5.Location = new System.Drawing.Point(461, 25);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(300, 57);
+            this.panel5.TabIndex = 173;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.label7.Location = new System.Drawing.Point(26, 6);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(248, 25);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "LISTADO DE TIPO USUARIO";
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape10});
+            this.shapeContainer1.Size = new System.Drawing.Size(300, 57);
+            this.shapeContainer1.TabIndex = 25;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape10
+            // 
+            this.lineShape10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.lineShape10.Name = "lineShape1";
+            this.lineShape10.X1 = 34;
+            this.lineShape10.X2 = 266;
+            this.lineShape10.Y1 = 35;
+            this.lineShape10.Y2 = 35;
+            // 
+            // lineShape11
+            // 
+            this.lineShape11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.lineShape11.Name = "lineShape11";
+            this.lineShape11.X1 = 421;
+            this.lineShape11.X2 = 421;
+            this.lineShape11.Y1 = 2;
+            this.lineShape11.Y2 = 621;
+            // 
+            // shapeContainer2
+            // 
+            this.shapeContainer2.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer2.Name = "shapeContainer2";
+            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape11});
+            this.shapeContainer2.Size = new System.Drawing.Size(843, 622);
+            this.shapeContainer2.TabIndex = 174;
+            this.shapeContainer2.TabStop = false;
+            // 
+            // DatosUser_pn
+            // 
+            this.DatosUser_pn.Controls.Add(this.txtTipoUsuario);
+            this.DatosUser_pn.Controls.Add(this.label2);
+            this.DatosUser_pn.Controls.Add(this.shapeContainer4);
+            this.DatosUser_pn.Location = new System.Drawing.Point(28, 111);
+            this.DatosUser_pn.Name = "DatosUser_pn";
+            this.DatosUser_pn.Size = new System.Drawing.Size(370, 37);
+            this.DatosUser_pn.TabIndex = 175;
+            // 
+            // txtTipoUsuario
+            // 
+            this.txtTipoUsuario.BackColor = System.Drawing.Color.White;
+            this.txtTipoUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTipoUsuario.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTipoUsuario.Location = new System.Drawing.Point(128, 3);
+            this.txtTipoUsuario.Multiline = true;
+            this.txtTipoUsuario.Name = "txtTipoUsuario";
+            this.txtTipoUsuario.Size = new System.Drawing.Size(198, 20);
+            this.txtTipoUsuario.TabIndex = 25;
+            this.txtTipoUsuario.Validar = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.label2.Location = new System.Drawing.Point(6, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 13);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "TIPO USUARIO:";
+            // 
+            // shapeContainer4
+            // 
+            this.shapeContainer4.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer4.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer4.Name = "shapeContainer4";
+            this.shapeContainer4.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape3});
+            this.shapeContainer4.Size = new System.Drawing.Size(370, 37);
+            this.shapeContainer4.TabIndex = 159;
+            this.shapeContainer4.TabStop = false;
+            // 
+            // lineShape3
+            // 
+            this.lineShape3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.lineShape3.BorderWidth = 2;
+            this.lineShape3.Name = "lineShape3";
+            this.lineShape3.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.lineShape3.X1 = 129;
+            this.lineShape3.X2 = 324;
+            this.lineShape3.Y1 = 23;
+            this.lineShape3.Y2 = 23;
             // 
             // dtgTipoUsuario
             // 
             this.dtgTipoUsuario.AllowUserToAddRows = false;
             this.dtgTipoUsuario.AllowUserToDeleteRows = false;
-            this.dtgTipoUsuario.BackgroundColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgTipoUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgTipoUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgTipoUsuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgTipoUsuario.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dtgTipoUsuario.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dtgTipoUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgTipoUsuario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgTipoUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgTipoUsuario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
-            this.Column1,
-            this.menu_ent_status,
-            this.menu_ent_salir,
-            this.tiempo_precio,
-            this.menu_salida_cerrar,
-            this.ticket_perdido,
-            this.ticket_manual,
+            this.nombre,
+            this.usuario,
+            this.clave,
+            this.tipo,
+            this.estado,
+            this.ticket_p,
+            this.ticket_m,
             this.reportes,
-            this.agregar_usuarios});
-            this.dtgTipoUsuario.Location = new System.Drawing.Point(15, 310);
+            this.agregar_usuario});
+            this.dtgTipoUsuario.EnableHeadersVisualStyles = false;
+            this.dtgTipoUsuario.GridColor = System.Drawing.Color.LightSteelBlue;
+            this.dtgTipoUsuario.Location = new System.Drawing.Point(450, 111);
             this.dtgTipoUsuario.MultiSelect = false;
             this.dtgTipoUsuario.Name = "dtgTipoUsuario";
             this.dtgTipoUsuario.ReadOnly = true;
+            this.dtgTipoUsuario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgTipoUsuario.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgTipoUsuario.RowHeadersWidth = 10;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(105)))));
+            this.dtgTipoUsuario.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dtgTipoUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgTipoUsuario.Size = new System.Drawing.Size(274, 170);
-            this.dtgTipoUsuario.TabIndex = 30;
+            this.dtgTipoUsuario.Size = new System.Drawing.Size(311, 248);
+            this.dtgTipoUsuario.TabIndex = 176;
             this.dtgTipoUsuario.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgTipoUsuario_CellDoubleClick);
+            // 
+            // saveSettings_btn
+            // 
+            this.saveSettings_btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.saveSettings_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.saveSettings_btn.FlatAppearance.BorderSize = 2;
+            this.saveSettings_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveSettings_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveSettings_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.saveSettings_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.save1;
+            this.saveSettings_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.saveSettings_btn.Location = new System.Drawing.Point(57, 438);
+            this.saveSettings_btn.Name = "saveSettings_btn";
+            this.saveSettings_btn.Size = new System.Drawing.Size(112, 51);
+            this.saveSettings_btn.TabIndex = 177;
+            this.saveSettings_btn.Text = "GUARDAR";
+            this.saveSettings_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.saveSettings_btn.UseVisualStyleBackColor = false;
+            this.saveSettings_btn.Click += new System.EventHandler(this.saveSettings_btn_Click);
+            // 
+            // cancel_btn
+            // 
+            this.cancel_btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cancel_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.cancel_btn.FlatAppearance.BorderSize = 2;
+            this.cancel_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancel_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancel_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.cancel_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.signal;
+            this.cancel_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cancel_btn.Location = new System.Drawing.Point(231, 438);
+            this.cancel_btn.Name = "cancel_btn";
+            this.cancel_btn.Size = new System.Drawing.Size(112, 51);
+            this.cancel_btn.TabIndex = 178;
+            this.cancel_btn.Text = "CANCELAR";
+            this.cancel_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cancel_btn.UseVisualStyleBackColor = false;
+            this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
             // 
             // id
             // 
+            this.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.id.HeaderText = "ID";
             this.id.Name = "id";
             this.id.ReadOnly = true;
             this.id.Visible = false;
+            this.id.Width = 200;
             // 
-            // Column1
+            // nombre
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.HeaderText = "DESCRIPCIÓN";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.nombre.FillWeight = 150F;
+            this.nombre.HeaderText = "DESCRIPCIÓN";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
             // 
-            // menu_ent_status
+            // usuario
             // 
-            this.menu_ent_status.HeaderText = "Menu Entrada Status";
-            this.menu_ent_status.Name = "menu_ent_status";
-            this.menu_ent_status.ReadOnly = true;
-            this.menu_ent_status.Visible = false;
+            this.usuario.HeaderText = "Menu Entrada Status";
+            this.usuario.Name = "usuario";
+            this.usuario.ReadOnly = true;
+            this.usuario.Visible = false;
             // 
-            // menu_ent_salir
+            // clave
             // 
-            this.menu_ent_salir.HeaderText = "Menu Entrada Cerrar";
-            this.menu_ent_salir.Name = "menu_ent_salir";
-            this.menu_ent_salir.ReadOnly = true;
-            this.menu_ent_salir.Visible = false;
+            this.clave.HeaderText = "Menu Entrada Cerrar";
+            this.clave.Name = "clave";
+            this.clave.ReadOnly = true;
+            this.clave.Visible = false;
             // 
-            // tiempo_precio
+            // tipo
             // 
-            this.tiempo_precio.HeaderText = "Tiempo Precio";
-            this.tiempo_precio.Name = "tiempo_precio";
-            this.tiempo_precio.ReadOnly = true;
-            this.tiempo_precio.Visible = false;
+            this.tipo.HeaderText = "Tiempo Precio";
+            this.tipo.Name = "tipo";
+            this.tipo.ReadOnly = true;
+            this.tipo.Visible = false;
             // 
-            // menu_salida_cerrar
+            // estado
             // 
-            this.menu_salida_cerrar.HeaderText = "Menu Salida Cerrar";
-            this.menu_salida_cerrar.Name = "menu_salida_cerrar";
-            this.menu_salida_cerrar.ReadOnly = true;
-            this.menu_salida_cerrar.Visible = false;
+            this.estado.HeaderText = "Menu Salida Cerrar";
+            this.estado.Name = "estado";
+            this.estado.ReadOnly = true;
+            this.estado.Visible = false;
             // 
-            // ticket_perdido
+            // ticket_p
             // 
-            this.ticket_perdido.HeaderText = "Ticket Perdido";
-            this.ticket_perdido.Name = "ticket_perdido";
-            this.ticket_perdido.ReadOnly = true;
-            this.ticket_perdido.Visible = false;
+            this.ticket_p.HeaderText = "Ticket Perdido";
+            this.ticket_p.Name = "ticket_p";
+            this.ticket_p.ReadOnly = true;
+            this.ticket_p.Visible = false;
             // 
-            // ticket_manual
+            // ticket_m
             // 
-            this.ticket_manual.HeaderText = "Ticket Manual";
-            this.ticket_manual.Name = "ticket_manual";
-            this.ticket_manual.ReadOnly = true;
-            this.ticket_manual.Visible = false;
+            this.ticket_m.HeaderText = "Ticket Manual";
+            this.ticket_m.Name = "ticket_m";
+            this.ticket_m.ReadOnly = true;
+            this.ticket_m.Visible = false;
             // 
             // reportes
             // 
@@ -288,117 +532,34 @@
             this.reportes.ReadOnly = true;
             this.reportes.Visible = false;
             // 
-            // agregar_usuarios
+            // agregar_usuario
             // 
-            this.agregar_usuarios.HeaderText = "Agregar Usuarios";
-            this.agregar_usuarios.Name = "agregar_usuarios";
-            this.agregar_usuarios.ReadOnly = true;
-            this.agregar_usuarios.Visible = false;
+            this.agregar_usuario.HeaderText = "Agregar Usuarios";
+            this.agregar_usuario.Name = "agregar_usuario";
+            this.agregar_usuario.ReadOnly = true;
+            this.agregar_usuario.Visible = false;
             // 
-            // label5
+            // label3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(-3, 291);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(403, 13);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "__________________________________________________________________";
-            // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 486);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(394, 34);
-            this.panel1.TabIndex = 35;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label4.Location = new System.Drawing.Point(16, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "DOBLE CLICK PARA EDITAR";
-            // 
-            // exit_btn
-            // 
-            this.exit_btn.BackColor = System.Drawing.SystemColors.Info;
-            this.exit_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.exit_btn.FlatAppearance.BorderSize = 2;
-            this.exit_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
-            this.exit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.exit;
-            this.exit_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.exit_btn.Location = new System.Drawing.Point(295, 423);
-            this.exit_btn.Name = "exit_btn";
-            this.exit_btn.Size = new System.Drawing.Size(83, 57);
-            this.exit_btn.TabIndex = 34;
-            this.exit_btn.Text = "SALIR";
-            this.exit_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.exit_btn.UseVisualStyleBackColor = false;
-            this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click);
-            // 
-            // cancel_btn
-            // 
-            this.cancel_btn.BackColor = System.Drawing.SystemColors.Info;
-            this.cancel_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.cancel_btn.FlatAppearance.BorderSize = 2;
-            this.cancel_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
-            this.cancel_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancel_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.cancel;
-            this.cancel_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.cancel_btn.Location = new System.Drawing.Point(295, 365);
-            this.cancel_btn.Name = "cancel_btn";
-            this.cancel_btn.Size = new System.Drawing.Size(83, 57);
-            this.cancel_btn.TabIndex = 33;
-            this.cancel_btn.Text = "CANCELAR";
-            this.cancel_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.cancel_btn.UseVisualStyleBackColor = false;
-            this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
-            // 
-            // saveSettings_btn
-            // 
-            this.saveSettings_btn.BackColor = System.Drawing.SystemColors.Info;
-            this.saveSettings_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.saveSettings_btn.FlatAppearance.BorderSize = 2;
-            this.saveSettings_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue;
-            this.saveSettings_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveSettings_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveSettings_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.save;
-            this.saveSettings_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.saveSettings_btn.Location = new System.Drawing.Point(295, 307);
-            this.saveSettings_btn.Name = "saveSettings_btn";
-            this.saveSettings_btn.Size = new System.Drawing.Size(83, 57);
-            this.saveSettings_btn.TabIndex = 32;
-            this.saveSettings_btn.Text = "GUARDAR";
-            this.saveSettings_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.saveSettings_btn.UseVisualStyleBackColor = false;
-            this.saveSettings_btn.Click += new System.EventHandler(this.saveSettings_btn_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.label3.Location = new System.Drawing.Point(487, 378);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(241, 26);
+            this.label3.TabIndex = 179;
+            this.label3.Text = "                DOBLE CLICK EN REGISTRO \r\nPARA EDITAR PERMISOS DE TIPO DE USUARIO" +
+    ".";
             // 
             // RegistroTipoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(394, 520);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.exit_btn);
-            this.Controls.Add(this.cancel_btn);
-            this.Controls.Add(this.saveSettings_btn);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dtgTipoUsuario);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtTipoUsuario);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(843, 622);
+            this.Controls.Add(this.panel2);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "RegistroTipoUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -406,19 +567,20 @@
             this.Load += new System.EventHandler(this.RegistroTipoUsuario_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.DatosUser_pn.ResumeLayout(false);
+            this.DatosUser_pn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgTipoUsuario)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtTipoUsuario;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox verStatusEntrada_chbox;
         private System.Windows.Forms.CheckBox cerrarEntrada_chbox;
         private System.Windows.Forms.CheckBox tiempoPrecio_chbox;
@@ -426,24 +588,38 @@
         private System.Windows.Forms.CheckBox ticketManual_chbox;
         private System.Windows.Forms.CheckBox cerrarSalida_chbox;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dtgTipoUsuario;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button exit_btn;
-        private System.Windows.Forms.Button cancel_btn;
-        private System.Windows.Forms.Button saveSettings_btn;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox agregarUsuario_chbox;
         private System.Windows.Forms.CheckBox generarReportes_chbox;
+        private System.Windows.Forms.Button exit_btn;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label1;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer5;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label7;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape10;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape11;
+        private System.Windows.Forms.Panel DatosUser_pn;
+        private Controles.textbox txtTipoUsuario;
+        private System.Windows.Forms.Label label2;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer4;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
+        private System.Windows.Forms.DataGridView dtgTipoUsuario;
+        private System.Windows.Forms.Button saveSettings_btn;
+        private System.Windows.Forms.Button cancel_btn;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn menu_ent_status;
-        private System.Windows.Forms.DataGridViewTextBoxColumn menu_ent_salir;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tiempo_precio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn menu_salida_cerrar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ticket_perdido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ticket_manual;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clave;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ticket_p;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ticket_m;
         private System.Windows.Forms.DataGridViewTextBoxColumn reportes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn agregar_usuarios;
+        private System.Windows.Forms.DataGridViewTextBoxColumn agregar_usuario;
+        private System.Windows.Forms.Label label3;
     }
 }

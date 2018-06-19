@@ -36,20 +36,16 @@
             this.pn_ReporteSubmenu = new System.Windows.Forms.Panel();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pn_Superior = new System.Windows.Forms.Panel();
             this.notActivated_lbl = new System.Windows.Forms.Label();
             this.pn_Central = new System.Windows.Forms.Panel();
-            this.hora_lb = new System.Windows.Forms.Label();
-            this.hora_timer = new System.Windows.Forms.Timer(this.components);
             this.btn_Restaurar = new System.Windows.Forms.PictureBox();
-            this.mENUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aCTIVARSOFTWAREToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_minimize = new System.Windows.Forms.PictureBox();
             this.btn_Maximize = new System.Windows.Forms.PictureBox();
             this.btn_MenuVertical = new System.Windows.Forms.PictureBox();
             this.btn_Close = new System.Windows.Forms.PictureBox();
+            this.avtivar_btn = new System.Windows.Forms.Button();
             this.cerrarSesion_btn = new System.Windows.Forms.Button();
             this.pb_CuentaUsuario = new System.Windows.Forms.PictureBox();
             this.historial_cierre_btn = new System.Windows.Forms.Button();
@@ -62,12 +58,9 @@
             this.agregarUsuario_btn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tipoUsuario_btn = new System.Windows.Forms.Button();
-            this.fecha_lab = new System.Windows.Forms.Label();
             this.pn_MenuVertical.SuspendLayout();
             this.pn_ReporteSubmenu.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.pn_Superior.SuspendLayout();
-            this.pn_Central.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Maximize)).BeginInit();
@@ -80,6 +73,7 @@
             // pn_MenuVertical
             // 
             this.pn_MenuVertical.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pn_MenuVertical.Controls.Add(this.avtivar_btn);
             this.pn_MenuVertical.Controls.Add(this.cerrarSesion_btn);
             this.pn_MenuVertical.Controls.Add(this.Usuario_lbl);
             this.pn_MenuVertical.Controls.Add(this.tipoUsuario_lbl);
@@ -157,25 +151,11 @@
             this.lineShape1.Y1 = 484;
             this.lineShape1.Y2 = 484;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.LightSlateGray;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mENUToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(525, 8);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(77, 24);
-            this.menuStrip1.TabIndex = 39;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.Visible = false;
-            // 
             // pn_Superior
             // 
             this.pn_Superior.BackColor = System.Drawing.Color.White;
             this.pn_Superior.Controls.Add(this.notActivated_lbl);
             this.pn_Superior.Controls.Add(this.btn_Restaurar);
-            this.pn_Superior.Controls.Add(this.menuStrip1);
             this.pn_Superior.Controls.Add(this.btn_minimize);
             this.pn_Superior.Controls.Add(this.btn_Maximize);
             this.pn_Superior.Controls.Add(this.btn_MenuVertical);
@@ -190,40 +170,23 @@
             // notActivated_lbl
             // 
             this.notActivated_lbl.AutoSize = true;
-            this.notActivated_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.notActivated_lbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.notActivated_lbl.ForeColor = System.Drawing.Color.DarkRed;
-            this.notActivated_lbl.Location = new System.Drawing.Point(46, 14);
+            this.notActivated_lbl.Location = new System.Drawing.Point(276, 11);
             this.notActivated_lbl.Name = "notActivated_lbl";
-            this.notActivated_lbl.Size = new System.Drawing.Size(312, 20);
+            this.notActivated_lbl.Size = new System.Drawing.Size(291, 21);
             this.notActivated_lbl.TabIndex = 43;
-            this.notActivated_lbl.Text = "SOFTWARE NO HA SIDO ACTIVADO";
+            this.notActivated_lbl.Text = "SOFTWARE NO HA SIDO ACTIVADO...!";
             // 
             // pn_Central
             // 
             this.pn_Central.BackColor = System.Drawing.Color.White;
-            this.pn_Central.Controls.Add(this.fecha_lab);
-            this.pn_Central.Controls.Add(this.hora_lb);
             this.pn_Central.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_Central.Location = new System.Drawing.Point(234, 42);
             this.pn_Central.Name = "pn_Central";
             this.pn_Central.Size = new System.Drawing.Size(843, 580);
             this.pn_Central.TabIndex = 42;
-            // 
-            // hora_lb
-            // 
-            this.hora_lb.AutoSize = true;
-            this.hora_lb.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hora_lb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.hora_lb.Location = new System.Drawing.Point(161, 247);
-            this.hora_lb.Name = "hora_lb";
-            this.hora_lb.Size = new System.Drawing.Size(54, 86);
-            this.hora_lb.TabIndex = 0;
-            this.hora_lb.Text = ".";
-            // 
-            // hora_timer
-            // 
-            this.hora_timer.Interval = 1000;
-            this.hora_timer.Tick += new System.EventHandler(this.hora_timer_Tick);
+            this.pn_Central.MouseEnter += new System.EventHandler(this.pn_Central_MouseEnter);
             // 
             // btn_Restaurar
             // 
@@ -240,23 +203,6 @@
             this.btn_Restaurar.Click += new System.EventHandler(this.btn_Restaurar_Click);
             this.btn_Restaurar.MouseLeave += new System.EventHandler(this.btn_Restaurar_MouseLeave);
             this.btn_Restaurar.MouseHover += new System.EventHandler(this.btn_Restaurar_MouseHover);
-            // 
-            // mENUToolStripMenuItem
-            // 
-            this.mENUToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aCTIVARSOFTWAREToolStripMenuItem});
-            this.mENUToolStripMenuItem.Image = global::SistemaParqueoAdministracion.Properties.Resources.menu;
-            this.mENUToolStripMenuItem.Name = "mENUToolStripMenuItem";
-            this.mENUToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.mENUToolStripMenuItem.Text = "MENU";
-            // 
-            // aCTIVARSOFTWAREToolStripMenuItem
-            // 
-            this.aCTIVARSOFTWAREToolStripMenuItem.Image = global::SistemaParqueoAdministracion.Properties.Resources.key;
-            this.aCTIVARSOFTWAREToolStripMenuItem.Name = "aCTIVARSOFTWAREToolStripMenuItem";
-            this.aCTIVARSOFTWAREToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.aCTIVARSOFTWAREToolStripMenuItem.Text = "ACTIVAR SOFTWARE";
-            this.aCTIVARSOFTWAREToolStripMenuItem.Click += new System.EventHandler(this.aCTIVARSOFTWAREToolStripMenuItem_Click);
             // 
             // btn_minimize
             // 
@@ -314,6 +260,26 @@
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             this.btn_Close.MouseLeave += new System.EventHandler(this.btn_Close_MouseLeave);
             this.btn_Close.MouseHover += new System.EventHandler(this.btn_Close_MouseHover);
+            // 
+            // avtivar_btn
+            // 
+            this.avtivar_btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.avtivar_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.avtivar_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.avtivar_btn.FlatAppearance.BorderSize = 0;
+            this.avtivar_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.avtivar_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.avtivar_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.avtivar_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.avtivar_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.open_lock;
+            this.avtivar_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.avtivar_btn.Location = new System.Drawing.Point(0, 64);
+            this.avtivar_btn.Name = "avtivar_btn";
+            this.avtivar_btn.Size = new System.Drawing.Size(234, 24);
+            this.avtivar_btn.TabIndex = 51;
+            this.avtivar_btn.Text = "Activar Software";
+            this.avtivar_btn.UseVisualStyleBackColor = false;
+            this.avtivar_btn.Click += new System.EventHandler(this.avtivar_btn_Click);
             // 
             // cerrarSesion_btn
             // 
@@ -506,7 +472,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::SistemaParqueoAdministracion.Properties.Resources.Logo1;
+            this.pictureBox2.Image = global::SistemaParqueoAdministracion.Properties.Resources.Logo5;
             this.pictureBox2.Location = new System.Drawing.Point(3, 14);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(231, 44);
@@ -534,15 +500,6 @@
             this.tipoUsuario_btn.UseVisualStyleBackColor = false;
             this.tipoUsuario_btn.Click += new System.EventHandler(this.tipoUsuario_btn_Click);
             // 
-            // fecha_lab
-            // 
-            this.fecha_lab.AutoSize = true;
-            this.fecha_lab.Location = new System.Drawing.Point(180, 269);
-            this.fecha_lab.Name = "fecha_lab";
-            this.fecha_lab.Size = new System.Drawing.Size(35, 13);
-            this.fecha_lab.TabIndex = 1;
-            this.fecha_lab.Text = "label1";
-            // 
             // MainScreenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -554,7 +511,6 @@
             this.Controls.Add(this.pn_MenuVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "MainScreenForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -563,12 +519,8 @@
             this.pn_MenuVertical.ResumeLayout(false);
             this.pn_MenuVertical.PerformLayout();
             this.pn_ReporteSubmenu.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.pn_Superior.ResumeLayout(false);
             this.pn_Superior.PerformLayout();
-            this.pn_Central.ResumeLayout(false);
-            this.pn_Central.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Restaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Maximize)).EndInit();
@@ -584,9 +536,6 @@
         private System.Windows.Forms.Panel pn_MenuVertical;
         private System.Windows.Forms.Label Usuario_lbl;
         private System.Windows.Forms.Label tipoUsuario_lbl;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem mENUToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aCTIVARSOFTWAREToolStripMenuItem;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Panel pn_Superior;
         private System.Windows.Forms.Panel pn_Central;
@@ -611,8 +560,6 @@
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.Button cerrarSesion_btn;
-        private System.Windows.Forms.Timer hora_timer;
-        private System.Windows.Forms.Label hora_lb;
-        private System.Windows.Forms.Label fecha_lab;
+        private System.Windows.Forms.Button avtivar_btn;
     }
 }

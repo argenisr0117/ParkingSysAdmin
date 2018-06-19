@@ -26,19 +26,11 @@ namespace SistemaParqueoAdministracion.Forms
         private extern static void SendMessage(System.IntPtr hwnd,int wmsg, int wparam, int lparam);
         private void tipoUsuario_btn_Click(object sender, EventArgs e)
         {
-            RegistroTipoUsuario form = new RegistroTipoUsuario();
-            form.ShowDialog();
+            var form = Application.OpenForms.OfType<RegistroTipoUsuario>().FirstOrDefault();
+            RegistroTipoUsuario hijo = form ?? new RegistroTipoUsuario();
+            ABrirFormulario(hijo);
         }
-        //private void OcultarHora()
-        //{
-        //    hora_lb.Visible = false;
-        //    fecha_lab.Visible = false;
-        //}
-        //public void MostrarHora()
-        //{
-        //    fecha_lab.Visible = true;
-        //    hora_lb.Visible = true;
-        //}
+      
         private void agregarUsuario_btn_Click(object sender, EventArgs e)
         {
             //OcultarHora();
@@ -48,10 +40,15 @@ namespace SistemaParqueoAdministracion.Forms
             //MostrarHora();
         }
 
+        public void AbrirIntroForm()
+        {
+            var form = Application.OpenForms.OfType<IntroForm>().FirstOrDefault();
+            IntroForm hijo = form ?? new IntroForm();
+            ABrirFormulario(hijo);
+        }
         private void MainScreenForm_Load(object sender, EventArgs e)
         {
-            hora_timer_Tick(e, e);
-            hora_timer.Start();
+            AbrirIntroForm();
             Usuario_lbl.Text = Program.UserName + " - " + Program.UserId;
              
             tipoUsuario_lbl.Text = Program.TipoUsuario ;
@@ -207,8 +204,9 @@ namespace SistemaParqueoAdministracion.Forms
 
         private void tiempo_precio_btn_Click(object sender, EventArgs e)
         {
-            configuracionTiempoPrecioForm form = new configuracionTiempoPrecioForm();
-            form.ShowDialog();
+            var form = Application.OpenForms.OfType<configuracionTiempoPrecioForm>().FirstOrDefault();
+            configuracionTiempoPrecioForm hijo = form ?? new configuracionTiempoPrecioForm();
+            ABrirFormulario(hijo);
         }
 
         private void configuraciones_btn_Click(object sender, EventArgs e)
@@ -227,6 +225,7 @@ namespace SistemaParqueoAdministracion.Forms
         private void ABrirFormulario (Form fh)
         {
             //OcultarHora();
+            //abrirform_timer.Start();
             if (pn_Central.Controls.Count > 0)
             {
                 pn_Central.Controls.RemoveAt(0);
@@ -240,11 +239,20 @@ namespace SistemaParqueoAdministracion.Forms
             //MostrarHora();
         }
 
-        private void hora_timer_Tick(object sender, EventArgs e)
-        {   
-            hora_lb.Text = DateTime.Now.ToString("hh:mm:ss tt");
-            fecha_lab.Text = DateTime.Now.Date.ToString("dddd,dd MMMM yyyy", CultureInfo.CreateSpecificCulture("es-DO"));
+        private void avtivar_btn_Click(object sender, EventArgs e)
+        {
+            ActivarSoftwareForm form = new ActivarSoftwareForm();
+            form.ShowDialog();
+            notActivated_lbl.Visible = Program.Activate;
+        }
 
+        private void pn_Central_MouseEnter(object sender, EventArgs e)
+        {
+            if (Program.form == 1)
+            {
+                AbrirIntroForm();
+                Program.form = 0;
+            }
         }
     }
 }

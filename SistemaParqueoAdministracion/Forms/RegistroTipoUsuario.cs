@@ -108,9 +108,13 @@ namespace SistemaParqueoAdministracion.Forms
 
         private void RegistroTipoUsuario_Load(object sender, EventArgs e)
         {
+            this.TopMost = true;
             Limpiar();
             Program.Evento = 0;
             LlenarGrid();
+            panel2.Location = new Point(this.ClientSize.Width / 2 - panel2.Size.Width / 2,
+                this.ClientSize.Height / 2 - panel2.Size.Height / 2);
+            panel2.Anchor = AnchorStyles.None;
         }
 
         private void LlenarGrid()
@@ -232,11 +236,9 @@ namespace SistemaParqueoAdministracion.Forms
 
         private void exit_btn_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea Salir?", "Sistema de Control de Parqueo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-            {
-                this.Dispose();
-                this.Close();
-            }
+            Program.form = 1;
+            this.Dispose();
+            this.Close();
         }
     }
 }

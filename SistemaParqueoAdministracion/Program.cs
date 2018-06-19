@@ -15,6 +15,7 @@ namespace SistemaParqueoAdministracion
         public static string TipoUsuario;
         public static bool Activate;
         public static int Idempresa;
+        public static int form = 0;
 
         /// <summary>
         /// The main entry point for the application.
