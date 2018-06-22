@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.verStatusEntrada_chbox = new System.Windows.Forms.CheckBox();
             this.cerrarEntrada_chbox = new System.Windows.Forms.CheckBox();
             this.tiempoPrecio_chbox = new System.Windows.Forms.CheckBox();
@@ -43,24 +43,25 @@
             this.generarReportes_chbox = new System.Windows.Forms.CheckBox();
             this.exit_btn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.shapeContainer5 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape10 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape11 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.label3 = new System.Windows.Forms.Label();
+            this.saveSettings_btn = new System.Windows.Forms.Button();
+            this.cancel_btn = new System.Windows.Forms.Button();
+            this.dtgTipoUsuario = new System.Windows.Forms.DataGridView();
             this.DatosUser_pn = new System.Windows.Forms.Panel();
             this.txtTipoUsuario = new SistemaParqueoAdministracion.Controles.textbox(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.shapeContainer4 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.dtgTipoUsuario = new System.Windows.Forms.DataGridView();
-            this.saveSettings_btn = new System.Windows.Forms.Button();
-            this.cancel_btn = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape10 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.shapeContainer5 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape11 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,13 +72,12 @@
             this.ticket_m = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reportes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.agregar_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.DatosUser_pn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgTipoUsuario)).BeginInit();
+            this.DatosUser_pn.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // verStatusEntrada_chbox
@@ -218,105 +218,111 @@
             this.panel2.Size = new System.Drawing.Size(843, 622);
             this.panel2.TabIndex = 36;
             // 
-            // panel4
+            // label3
             // 
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.shapeContainer5);
-            this.panel4.Location = new System.Drawing.Point(35, 25);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(317, 57);
-            this.panel4.TabIndex = 172;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.label3.Location = new System.Drawing.Point(487, 378);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(241, 26);
+            this.label3.TabIndex = 179;
+            this.label3.Text = "                DOBLE CLICK EN REGISTRO \r\nPARA EDITAR PERMISOS DE TIPO DE USUARIO" +
+    ".";
             // 
-            // label1
+            // saveSettings_btn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.label1.Location = new System.Drawing.Point(28, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 25);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "REGISTRO DE TIPO USUARIO";
+            this.saveSettings_btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.saveSettings_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.saveSettings_btn.FlatAppearance.BorderSize = 2;
+            this.saveSettings_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveSettings_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveSettings_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.saveSettings_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.save1;
+            this.saveSettings_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.saveSettings_btn.Location = new System.Drawing.Point(57, 438);
+            this.saveSettings_btn.Name = "saveSettings_btn";
+            this.saveSettings_btn.Size = new System.Drawing.Size(112, 51);
+            this.saveSettings_btn.TabIndex = 177;
+            this.saveSettings_btn.Text = "GUARDAR";
+            this.saveSettings_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.saveSettings_btn.UseVisualStyleBackColor = false;
+            this.saveSettings_btn.Click += new System.EventHandler(this.saveSettings_btn_Click);
             // 
-            // shapeContainer5
+            // cancel_btn
             // 
-            this.shapeContainer5.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer5.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer5.Name = "shapeContainer5";
-            this.shapeContainer5.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape1});
-            this.shapeContainer5.Size = new System.Drawing.Size(317, 57);
-            this.shapeContainer5.TabIndex = 25;
-            this.shapeContainer5.TabStop = false;
+            this.cancel_btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cancel_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.cancel_btn.FlatAppearance.BorderSize = 2;
+            this.cancel_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancel_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancel_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.cancel_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.signal;
+            this.cancel_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cancel_btn.Location = new System.Drawing.Point(231, 438);
+            this.cancel_btn.Name = "cancel_btn";
+            this.cancel_btn.Size = new System.Drawing.Size(112, 51);
+            this.cancel_btn.TabIndex = 178;
+            this.cancel_btn.Text = "CANCELAR";
+            this.cancel_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cancel_btn.UseVisualStyleBackColor = false;
+            this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
             // 
-            // lineShape1
+            // dtgTipoUsuario
             // 
-            this.lineShape1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 33;
-            this.lineShape1.X2 = 282;
-            this.lineShape1.Y1 = 35;
-            this.lineShape1.Y2 = 35;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.shapeContainer1);
-            this.panel5.Location = new System.Drawing.Point(461, 25);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(300, 57);
-            this.panel5.TabIndex = 173;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.label7.Location = new System.Drawing.Point(26, 6);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(248, 25);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "LISTADO DE TIPO USUARIO";
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape10});
-            this.shapeContainer1.Size = new System.Drawing.Size(300, 57);
-            this.shapeContainer1.TabIndex = 25;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape10
-            // 
-            this.lineShape10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.lineShape10.Name = "lineShape1";
-            this.lineShape10.X1 = 34;
-            this.lineShape10.X2 = 266;
-            this.lineShape10.Y1 = 35;
-            this.lineShape10.Y2 = 35;
-            // 
-            // lineShape11
-            // 
-            this.lineShape11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.lineShape11.Name = "lineShape11";
-            this.lineShape11.X1 = 421;
-            this.lineShape11.X2 = 421;
-            this.lineShape11.Y1 = 2;
-            this.lineShape11.Y2 = 621;
-            // 
-            // shapeContainer2
-            // 
-            this.shapeContainer2.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer2.Name = "shapeContainer2";
-            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape11});
-            this.shapeContainer2.Size = new System.Drawing.Size(843, 622);
-            this.shapeContainer2.TabIndex = 174;
-            this.shapeContainer2.TabStop = false;
+            this.dtgTipoUsuario.AllowUserToAddRows = false;
+            this.dtgTipoUsuario.AllowUserToDeleteRows = false;
+            this.dtgTipoUsuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgTipoUsuario.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dtgTipoUsuario.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dtgTipoUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgTipoUsuario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgTipoUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgTipoUsuario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.nombre,
+            this.usuario,
+            this.clave,
+            this.tipo,
+            this.estado,
+            this.ticket_p,
+            this.ticket_m,
+            this.reportes,
+            this.agregar_usuario});
+            this.dtgTipoUsuario.EnableHeadersVisualStyles = false;
+            this.dtgTipoUsuario.GridColor = System.Drawing.Color.LightSteelBlue;
+            this.dtgTipoUsuario.Location = new System.Drawing.Point(450, 111);
+            this.dtgTipoUsuario.MultiSelect = false;
+            this.dtgTipoUsuario.Name = "dtgTipoUsuario";
+            this.dtgTipoUsuario.ReadOnly = true;
+            this.dtgTipoUsuario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgTipoUsuario.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgTipoUsuario.RowHeadersWidth = 10;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.dtgTipoUsuario.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgTipoUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgTipoUsuario.Size = new System.Drawing.Size(311, 248);
+            this.dtgTipoUsuario.TabIndex = 176;
+            this.dtgTipoUsuario.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgTipoUsuario_CellDoubleClick);
             // 
             // DatosUser_pn
             // 
@@ -373,99 +379,105 @@
             this.lineShape3.Y1 = 23;
             this.lineShape3.Y2 = 23;
             // 
-            // dtgTipoUsuario
+            // panel5
             // 
-            this.dtgTipoUsuario.AllowUserToAddRows = false;
-            this.dtgTipoUsuario.AllowUserToDeleteRows = false;
-            this.dtgTipoUsuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgTipoUsuario.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dtgTipoUsuario.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dtgTipoUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgTipoUsuario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgTipoUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dtgTipoUsuario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.nombre,
-            this.usuario,
-            this.clave,
-            this.tipo,
-            this.estado,
-            this.ticket_p,
-            this.ticket_m,
-            this.reportes,
-            this.agregar_usuario});
-            this.dtgTipoUsuario.EnableHeadersVisualStyles = false;
-            this.dtgTipoUsuario.GridColor = System.Drawing.Color.LightSteelBlue;
-            this.dtgTipoUsuario.Location = new System.Drawing.Point(450, 111);
-            this.dtgTipoUsuario.MultiSelect = false;
-            this.dtgTipoUsuario.Name = "dtgTipoUsuario";
-            this.dtgTipoUsuario.ReadOnly = true;
-            this.dtgTipoUsuario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgTipoUsuario.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dtgTipoUsuario.RowHeadersWidth = 10;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(105)))));
-            this.dtgTipoUsuario.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dtgTipoUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgTipoUsuario.Size = new System.Drawing.Size(311, 248);
-            this.dtgTipoUsuario.TabIndex = 176;
-            this.dtgTipoUsuario.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgTipoUsuario_CellDoubleClick);
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.shapeContainer1);
+            this.panel5.Location = new System.Drawing.Point(461, 25);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(300, 57);
+            this.panel5.TabIndex = 173;
             // 
-            // saveSettings_btn
+            // label7
             // 
-            this.saveSettings_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.saveSettings_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.saveSettings_btn.FlatAppearance.BorderSize = 2;
-            this.saveSettings_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveSettings_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveSettings_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.saveSettings_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.save1;
-            this.saveSettings_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.saveSettings_btn.Location = new System.Drawing.Point(57, 438);
-            this.saveSettings_btn.Name = "saveSettings_btn";
-            this.saveSettings_btn.Size = new System.Drawing.Size(112, 51);
-            this.saveSettings_btn.TabIndex = 177;
-            this.saveSettings_btn.Text = "GUARDAR";
-            this.saveSettings_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.saveSettings_btn.UseVisualStyleBackColor = false;
-            this.saveSettings_btn.Click += new System.EventHandler(this.saveSettings_btn_Click);
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.label7.Location = new System.Drawing.Point(26, 6);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(248, 25);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "LISTADO DE TIPO USUARIO";
             // 
-            // cancel_btn
+            // shapeContainer1
             // 
-            this.cancel_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cancel_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.cancel_btn.FlatAppearance.BorderSize = 2;
-            this.cancel_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancel_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.cancel_btn.Image = global::SistemaParqueoAdministracion.Properties.Resources.signal;
-            this.cancel_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cancel_btn.Location = new System.Drawing.Point(231, 438);
-            this.cancel_btn.Name = "cancel_btn";
-            this.cancel_btn.Size = new System.Drawing.Size(112, 51);
-            this.cancel_btn.TabIndex = 178;
-            this.cancel_btn.Text = "CANCELAR";
-            this.cancel_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cancel_btn.UseVisualStyleBackColor = false;
-            this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape10});
+            this.shapeContainer1.Size = new System.Drawing.Size(300, 57);
+            this.shapeContainer1.TabIndex = 25;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape10
+            // 
+            this.lineShape10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.lineShape10.Name = "lineShape1";
+            this.lineShape10.X1 = 34;
+            this.lineShape10.X2 = 266;
+            this.lineShape10.Y1 = 35;
+            this.lineShape10.Y2 = 35;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.shapeContainer5);
+            this.panel4.Location = new System.Drawing.Point(35, 25);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(317, 57);
+            this.panel4.TabIndex = 172;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.label1.Location = new System.Drawing.Point(28, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(260, 25);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "REGISTRO DE TIPO USUARIO";
+            // 
+            // shapeContainer5
+            // 
+            this.shapeContainer5.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer5.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer5.Name = "shapeContainer5";
+            this.shapeContainer5.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape1});
+            this.shapeContainer5.Size = new System.Drawing.Size(317, 57);
+            this.shapeContainer5.TabIndex = 25;
+            this.shapeContainer5.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 33;
+            this.lineShape1.X2 = 282;
+            this.lineShape1.Y1 = 35;
+            this.lineShape1.Y2 = 35;
+            // 
+            // shapeContainer2
+            // 
+            this.shapeContainer2.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer2.Name = "shapeContainer2";
+            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape11});
+            this.shapeContainer2.Size = new System.Drawing.Size(843, 622);
+            this.shapeContainer2.TabIndex = 174;
+            this.shapeContainer2.TabStop = false;
+            // 
+            // lineShape11
+            // 
+            this.lineShape11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.lineShape11.Name = "lineShape11";
+            this.lineShape11.X1 = 421;
+            this.lineShape11.X2 = 421;
+            this.lineShape11.Y1 = 2;
+            this.lineShape11.Y2 = 621;
             // 
             // id
             // 
@@ -539,18 +551,6 @@
             this.agregar_usuario.ReadOnly = true;
             this.agregar_usuario.Visible = false;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.label3.Location = new System.Drawing.Point(487, 378);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(241, 26);
-            this.label3.TabIndex = 179;
-            this.label3.Text = "                DOBLE CLICK EN REGISTRO \r\nPARA EDITAR PERMISOS DE TIPO DE USUARIO" +
-    ".";
-            // 
             // RegistroTipoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -569,13 +569,13 @@
             this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTipoUsuario)).EndInit();
             this.DatosUser_pn.ResumeLayout(false);
             this.DatosUser_pn.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgTipoUsuario)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -610,6 +610,7 @@
         private System.Windows.Forms.DataGridView dtgTipoUsuario;
         private System.Windows.Forms.Button saveSettings_btn;
         private System.Windows.Forms.Button cancel_btn;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn usuario;
@@ -620,6 +621,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ticket_m;
         private System.Windows.Forms.DataGridViewTextBoxColumn reportes;
         private System.Windows.Forms.DataGridViewTextBoxColumn agregar_usuario;
-        private System.Windows.Forms.Label label3;
     }
 }

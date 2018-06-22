@@ -37,6 +37,8 @@ namespace SistemaParqueoAdministracion.Forms
                     Empresa_dtg.Rows[x].Cells[2].Value = dt.Rows[x][2].ToString();
                     Empresa_dtg.Rows[x].Cells[3].Value = dt.Rows[x][3].ToString();
                     Empresa_dtg.Rows[x].Cells[4].Value = dt.Rows[x][4].ToString();
+                    BloquearTxts();
+                  
                 }
                 Empresa_dtg.ClearSelection();
             }
@@ -45,13 +47,28 @@ namespace SistemaParqueoAdministracion.Forms
                 MessageBox.Show(ex.Message, "Sistema de Parqueo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void BloquearTxts()
+        {
+            Nombre_txt.Enabled = false;
+            direccion_txt.Enabled = false;
+            telefono_txt.Enabled = false;
+            correo_txt.Enabled = false;
+        }
+        private void DesbloquearTxts()
+        {
+            Nombre_txt.Enabled = true;
+            direccion_txt.Enabled = true;
+            telefono_txt.Enabled = true;
+            correo_txt.Enabled = true;
+        }
         private void saveSettings_btn_Click(object sender, EventArgs e)
         {
             string mensaje = "";
             try
             {
                 errorProvider1.Clear();
-                if (Utilidades.ValidarForm(this, errorProvider1) == false)
+                if (Utilidades.ValidarForm2(DatosEmpresa_pn, errorProvider1) == false)
                 {
                     return;
                 }
@@ -91,11 +108,17 @@ namespace SistemaParqueoAdministracion.Forms
         }
         private void Limpiar()
         {
+            if (Empresa_dtg.Rows.Count > 0)
+            {
+                BloquearTxts();
+            }
             correo_txt.Clear();
             direccion_txt.Clear();
             Nombre_txt.Clear();
             telefono_txt.Clear();
             Nombre_txt.Focus();
+            Program.Idempresa = 0;
+            Program.Evento = 0;
 
         }
 
@@ -109,7 +132,20 @@ namespace SistemaParqueoAdministracion.Forms
                 telefono_txt.Text= Empresa_dtg.CurrentRow.Cells[3].Value.ToString();
                 correo_txt.Text= Empresa_dtg.CurrentRow.Cells[4].Value.ToString();
                 Program.Evento = 1;
+                DesbloquearTxts();
             }
+        }
+
+        private void exit_btn_Click(object sender, EventArgs e)
+        {
+            Program.form = 1;
+            this.Dispose();
+            this.Close();
+        }
+
+        private void cancel_btn_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }

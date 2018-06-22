@@ -52,10 +52,15 @@ namespace SistemaParqueoAdministracion
         {
             DataTable dt = new DataTable();
             List<clsParametros> lst = new List<clsParametros>();
-            //lst.Add(new clsParametros("@estado", Mestado));
             return dt = C.Listado("GET_SETTINGS_ADM", lst);
         }
-
+        public DataTable GetTotalesDiarios()
+        {
+            DataTable dt = new DataTable();
+            List<clsParametros> lst = new List<clsParametros>();
+            //lst.Add(new clsParametros("@estado", Mestado));
+            return dt = C.Listado("GET_TOTALES_DIARIOS", lst);
+        }
         public bool updateSettigs()
         {
             bool mensaje;

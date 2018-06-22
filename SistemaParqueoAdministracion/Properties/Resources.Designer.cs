@@ -73,6 +73,16 @@ namespace SistemaParqueoAdministracion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bill {
+            get {
+                object obj = ResourceManager.GetObject("bill", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blank_check_box {
             get {
                 object obj = ResourceManager.GetObject("blank-check-box", resourceCulture);
@@ -186,6 +196,16 @@ namespace SistemaParqueoAdministracion.Properties {
         internal static System.Drawing.Bitmap configure {
             get {
                 object obj = ResourceManager.GetObject("configure", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dollar_symbol {
+            get {
+                object obj = ResourceManager.GetObject("dollar-symbol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,6 +333,16 @@ namespace SistemaParqueoAdministracion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap magnifying_glass {
+            get {
+                object obj = ResourceManager.GetObject("magnifying-glass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap man_user {
             get {
                 object obj = ResourceManager.GetObject("man-user", resourceCulture);
@@ -383,6 +413,16 @@ namespace SistemaParqueoAdministracion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap news_report {
+            get {
+                object obj = ResourceManager.GetObject("news-report", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap open_lock {
             get {
                 object obj = ResourceManager.GetObject("open-lock", resourceCulture);
@@ -406,6 +446,26 @@ namespace SistemaParqueoAdministracion.Properties {
         internal static System.Drawing.Bitmap parking {
             get {
                 object obj = ResourceManager.GetObject("parking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap parking_car {
+            get {
+                object obj = ResourceManager.GetObject("parking_car", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap parking_ticket {
+            get {
+                object obj = ResourceManager.GetObject("parking-ticket", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -26,6 +26,7 @@ namespace SistemaParqueoAdministracion.Forms
         private extern static void SendMessage(System.IntPtr hwnd,int wmsg, int wparam, int lparam);
         private void tipoUsuario_btn_Click(object sender, EventArgs e)
         {
+            CerrarIntroForm();
             var form = Application.OpenForms.OfType<RegistroTipoUsuario>().FirstOrDefault();
             RegistroTipoUsuario hijo = form ?? new RegistroTipoUsuario();
             ABrirFormulario(hijo);
@@ -33,11 +34,11 @@ namespace SistemaParqueoAdministracion.Forms
       
         private void agregarUsuario_btn_Click(object sender, EventArgs e)
         {
-            //OcultarHora();
+            CerrarIntroForm();
             var form = Application.OpenForms.OfType<RegistroUsuario>().FirstOrDefault();
             RegistroUsuario hijo = form ?? new RegistroUsuario();
             ABrirFormulario(hijo);
-            //MostrarHora();
+  
         }
 
         public void AbrirIntroForm()
@@ -45,6 +46,12 @@ namespace SistemaParqueoAdministracion.Forms
             var form = Application.OpenForms.OfType<IntroForm>().FirstOrDefault();
             IntroForm hijo = form ?? new IntroForm();
             ABrirFormulario(hijo);
+        }
+        public void CerrarIntroForm()
+        {
+            var form = Application.OpenForms.OfType<IntroForm>().FirstOrDefault();
+            IntroForm hijo = form ?? new IntroForm();
+            hijo.Close();
         }
         private void MainScreenForm_Load(object sender, EventArgs e)
         {
@@ -56,6 +63,7 @@ namespace SistemaParqueoAdministracion.Forms
             if (mensaje)
             {
                 notActivated_lbl.Visible = false;
+                avtivar_btn.Visible = false;
             }
             else
             {
@@ -71,12 +79,6 @@ namespace SistemaParqueoAdministracion.Forms
             
         }
 
-        private void aCTIVARSOFTWAREToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ActivarSoftwareForm form = new ActivarSoftwareForm();
-            form.ShowDialog();
-            notActivated_lbl.Visible = Program.Activate;
-        }
 
         private void cierre_diario_btn_Click(object sender, EventArgs e)
         {
@@ -86,8 +88,10 @@ namespace SistemaParqueoAdministracion.Forms
 
         private void empresa_btn_Click(object sender, EventArgs e)
         {
-            Empresa form = new Empresa();
-            form.Show();
+            CerrarIntroForm();
+            var form = Application.OpenForms.OfType<Empresa>().FirstOrDefault();
+            Empresa hijo = form ?? new Empresa();
+            ABrirFormulario(hijo);
         }
 
         private void detalle_cierre_btn_Click(object sender, EventArgs e)
@@ -204,6 +208,8 @@ namespace SistemaParqueoAdministracion.Forms
 
         private void tiempo_precio_btn_Click(object sender, EventArgs e)
         {
+
+            CerrarIntroForm();
             var form = Application.OpenForms.OfType<configuracionTiempoPrecioForm>().FirstOrDefault();
             configuracionTiempoPrecioForm hijo = form ?? new configuracionTiempoPrecioForm();
             ABrirFormulario(hijo);
@@ -211,6 +217,7 @@ namespace SistemaParqueoAdministracion.Forms
 
         private void configuraciones_btn_Click(object sender, EventArgs e)
         {
+            CerrarIntroForm();
             OtrasConfiguracionesForm form = new OtrasConfiguracionesForm();
             form.ShowDialog();
         }
@@ -229,8 +236,11 @@ namespace SistemaParqueoAdministracion.Forms
             if (pn_Central.Controls.Count > 0)
             {
                 pn_Central.Controls.RemoveAt(0);
+                //fh.Dispose();
+
             }
             //Form fh = objForm as Form;
+            //fh.Close();
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
             this.pn_Central.Controls.Add(fh);

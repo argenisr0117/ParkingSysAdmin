@@ -31,23 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainScreenForm));
             this.pn_MenuVertical = new System.Windows.Forms.Panel();
-            this.Usuario_lbl = new System.Windows.Forms.Label();
-            this.tipoUsuario_lbl = new System.Windows.Forms.Label();
-            this.pn_ReporteSubmenu = new System.Windows.Forms.Panel();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.pn_Superior = new System.Windows.Forms.Panel();
-            this.notActivated_lbl = new System.Windows.Forms.Label();
-            this.pn_Central = new System.Windows.Forms.Panel();
-            this.btn_Restaurar = new System.Windows.Forms.PictureBox();
-            this.btn_minimize = new System.Windows.Forms.PictureBox();
-            this.btn_Maximize = new System.Windows.Forms.PictureBox();
-            this.btn_MenuVertical = new System.Windows.Forms.PictureBox();
-            this.btn_Close = new System.Windows.Forms.PictureBox();
             this.avtivar_btn = new System.Windows.Forms.Button();
             this.cerrarSesion_btn = new System.Windows.Forms.Button();
+            this.Usuario_lbl = new System.Windows.Forms.Label();
+            this.tipoUsuario_lbl = new System.Windows.Forms.Label();
             this.pb_CuentaUsuario = new System.Windows.Forms.PictureBox();
+            this.pn_ReporteSubmenu = new System.Windows.Forms.Panel();
             this.historial_cierre_btn = new System.Windows.Forms.Button();
             this.detalle_cierre_btn = new System.Windows.Forms.Button();
             this.cierre_diario_btn = new System.Windows.Forms.Button();
@@ -58,16 +47,27 @@
             this.agregarUsuario_btn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tipoUsuario_btn = new System.Windows.Forms.Button();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.btn_Restaurar = new System.Windows.Forms.PictureBox();
+            this.btn_minimize = new System.Windows.Forms.PictureBox();
+            this.btn_Maximize = new System.Windows.Forms.PictureBox();
+            this.btn_Close = new System.Windows.Forms.PictureBox();
+            this.pn_Superior = new System.Windows.Forms.Panel();
+            this.notActivated_lbl = new System.Windows.Forms.Label();
+            this.btn_MenuVertical = new System.Windows.Forms.PictureBox();
+            this.pn_Central = new System.Windows.Forms.Panel();
             this.pn_MenuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_CuentaUsuario)).BeginInit();
             this.pn_ReporteSubmenu.SuspendLayout();
-            this.pn_Superior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Maximize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_MenuVertical)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Close)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_CuentaUsuario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pn_Superior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_MenuVertical)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_MenuVertical
@@ -92,174 +92,6 @@
             this.pn_MenuVertical.Name = "pn_MenuVertical";
             this.pn_MenuVertical.Size = new System.Drawing.Size(234, 622);
             this.pn_MenuVertical.TabIndex = 36;
-            // 
-            // Usuario_lbl
-            // 
-            this.Usuario_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Usuario_lbl.AutoSize = true;
-            this.Usuario_lbl.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Usuario_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.Usuario_lbl.Location = new System.Drawing.Point(105, 530);
-            this.Usuario_lbl.Name = "Usuario_lbl";
-            this.Usuario_lbl.Size = new System.Drawing.Size(18, 20);
-            this.Usuario_lbl.TabIndex = 1;
-            this.Usuario_lbl.Text = "u";
-            // 
-            // tipoUsuario_lbl
-            // 
-            this.tipoUsuario_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.tipoUsuario_lbl.AutoSize = true;
-            this.tipoUsuario_lbl.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tipoUsuario_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.tipoUsuario_lbl.Location = new System.Drawing.Point(105, 502);
-            this.tipoUsuario_lbl.Name = "tipoUsuario_lbl";
-            this.tipoUsuario_lbl.Size = new System.Drawing.Size(15, 20);
-            this.tipoUsuario_lbl.TabIndex = 5;
-            this.tipoUsuario_lbl.Text = "t";
-            // 
-            // pn_ReporteSubmenu
-            // 
-            this.pn_ReporteSubmenu.Controls.Add(this.historial_cierre_btn);
-            this.pn_ReporteSubmenu.Controls.Add(this.detalle_cierre_btn);
-            this.pn_ReporteSubmenu.Controls.Add(this.cierre_diario_btn);
-            this.pn_ReporteSubmenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pn_ReporteSubmenu.Location = new System.Drawing.Point(36, 353);
-            this.pn_ReporteSubmenu.Name = "pn_ReporteSubmenu";
-            this.pn_ReporteSubmenu.Size = new System.Drawing.Size(198, 121);
-            this.pn_ReporteSubmenu.TabIndex = 47;
-            this.pn_ReporteSubmenu.Visible = false;
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(234, 622);
-            this.shapeContainer1.TabIndex = 48;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape1
-            // 
-            this.lineShape1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lineShape1.BorderWidth = 2;
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
-            this.lineShape1.X1 = 2;
-            this.lineShape1.X2 = 233;
-            this.lineShape1.Y1 = 484;
-            this.lineShape1.Y2 = 484;
-            // 
-            // pn_Superior
-            // 
-            this.pn_Superior.BackColor = System.Drawing.Color.White;
-            this.pn_Superior.Controls.Add(this.notActivated_lbl);
-            this.pn_Superior.Controls.Add(this.btn_Restaurar);
-            this.pn_Superior.Controls.Add(this.btn_minimize);
-            this.pn_Superior.Controls.Add(this.btn_Maximize);
-            this.pn_Superior.Controls.Add(this.btn_MenuVertical);
-            this.pn_Superior.Controls.Add(this.btn_Close);
-            this.pn_Superior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_Superior.Location = new System.Drawing.Point(234, 0);
-            this.pn_Superior.Name = "pn_Superior";
-            this.pn_Superior.Size = new System.Drawing.Size(843, 42);
-            this.pn_Superior.TabIndex = 41;
-            this.pn_Superior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_Superior_MouseDown);
-            // 
-            // notActivated_lbl
-            // 
-            this.notActivated_lbl.AutoSize = true;
-            this.notActivated_lbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.notActivated_lbl.ForeColor = System.Drawing.Color.DarkRed;
-            this.notActivated_lbl.Location = new System.Drawing.Point(276, 11);
-            this.notActivated_lbl.Name = "notActivated_lbl";
-            this.notActivated_lbl.Size = new System.Drawing.Size(291, 21);
-            this.notActivated_lbl.TabIndex = 43;
-            this.notActivated_lbl.Text = "SOFTWARE NO HA SIDO ACTIVADO...!";
-            // 
-            // pn_Central
-            // 
-            this.pn_Central.BackColor = System.Drawing.Color.White;
-            this.pn_Central.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_Central.Location = new System.Drawing.Point(234, 42);
-            this.pn_Central.Name = "pn_Central";
-            this.pn_Central.Size = new System.Drawing.Size(843, 580);
-            this.pn_Central.TabIndex = 42;
-            this.pn_Central.MouseEnter += new System.EventHandler(this.pn_Central_MouseEnter);
-            // 
-            // btn_Restaurar
-            // 
-            this.btn_Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Restaurar.Image = global::SistemaParqueoAdministracion.Properties.Resources.multi_tab;
-            this.btn_Restaurar.Location = new System.Drawing.Point(801, 7);
-            this.btn_Restaurar.Name = "btn_Restaurar";
-            this.btn_Restaurar.Size = new System.Drawing.Size(15, 15);
-            this.btn_Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_Restaurar.TabIndex = 44;
-            this.btn_Restaurar.TabStop = false;
-            this.toolTip1.SetToolTip(this.btn_Restaurar, "Restaurar");
-            this.btn_Restaurar.Visible = false;
-            this.btn_Restaurar.Click += new System.EventHandler(this.btn_Restaurar_Click);
-            this.btn_Restaurar.MouseLeave += new System.EventHandler(this.btn_Restaurar_MouseLeave);
-            this.btn_Restaurar.MouseHover += new System.EventHandler(this.btn_Restaurar_MouseHover);
-            // 
-            // btn_minimize
-            // 
-            this.btn_minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_minimize.Image = global::SistemaParqueoAdministracion.Properties.Resources.minimize;
-            this.btn_minimize.Location = new System.Drawing.Point(780, 7);
-            this.btn_minimize.Name = "btn_minimize";
-            this.btn_minimize.Size = new System.Drawing.Size(15, 15);
-            this.btn_minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_minimize.TabIndex = 45;
-            this.btn_minimize.TabStop = false;
-            this.toolTip1.SetToolTip(this.btn_minimize, "Minimizar");
-            this.btn_minimize.Click += new System.EventHandler(this.btn_minimize_Click);
-            this.btn_minimize.MouseLeave += new System.EventHandler(this.btn_minimize_MouseLeave);
-            this.btn_minimize.MouseHover += new System.EventHandler(this.btn_minimize_MouseHover);
-            // 
-            // btn_Maximize
-            // 
-            this.btn_Maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Maximize.Image = global::SistemaParqueoAdministracion.Properties.Resources.blank_check_box;
-            this.btn_Maximize.Location = new System.Drawing.Point(801, 7);
-            this.btn_Maximize.Name = "btn_Maximize";
-            this.btn_Maximize.Size = new System.Drawing.Size(15, 15);
-            this.btn_Maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_Maximize.TabIndex = 46;
-            this.btn_Maximize.TabStop = false;
-            this.toolTip1.SetToolTip(this.btn_Maximize, "Maximizar");
-            this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
-            this.btn_Maximize.MouseLeave += new System.EventHandler(this.btn_Maximize_MouseLeave);
-            this.btn_Maximize.MouseHover += new System.EventHandler(this.btn_Maximize_MouseHover);
-            // 
-            // btn_MenuVertical
-            // 
-            this.btn_MenuVertical.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MenuVertical.Image = global::SistemaParqueoAdministracion.Properties.Resources.menu1;
-            this.btn_MenuVertical.Location = new System.Drawing.Point(3, 4);
-            this.btn_MenuVertical.Name = "btn_MenuVertical";
-            this.btn_MenuVertical.Size = new System.Drawing.Size(37, 35);
-            this.btn_MenuVertical.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_MenuVertical.TabIndex = 0;
-            this.btn_MenuVertical.TabStop = false;
-            this.btn_MenuVertical.Click += new System.EventHandler(this.btn_MenuVertical_Click);
-            // 
-            // btn_Close
-            // 
-            this.btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Close.Image = global::SistemaParqueoAdministracion.Properties.Resources.cancel1;
-            this.btn_Close.Location = new System.Drawing.Point(822, 7);
-            this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(15, 15);
-            this.btn_Close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_Close.TabIndex = 1;
-            this.btn_Close.TabStop = false;
-            this.toolTip1.SetToolTip(this.btn_Close, "Cerrar");
-            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
-            this.btn_Close.MouseLeave += new System.EventHandler(this.btn_Close_MouseLeave);
-            this.btn_Close.MouseHover += new System.EventHandler(this.btn_Close_MouseHover);
             // 
             // avtivar_btn
             // 
@@ -302,16 +134,52 @@
             this.cerrarSesion_btn.UseVisualStyleBackColor = false;
             this.cerrarSesion_btn.Click += new System.EventHandler(this.cerrarSesion_btn_Click);
             // 
+            // Usuario_lbl
+            // 
+            this.Usuario_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Usuario_lbl.AutoSize = true;
+            this.Usuario_lbl.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Usuario_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.Usuario_lbl.Location = new System.Drawing.Point(75, 527);
+            this.Usuario_lbl.Name = "Usuario_lbl";
+            this.Usuario_lbl.Size = new System.Drawing.Size(18, 20);
+            this.Usuario_lbl.TabIndex = 1;
+            this.Usuario_lbl.Text = "u";
+            // 
+            // tipoUsuario_lbl
+            // 
+            this.tipoUsuario_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tipoUsuario_lbl.AutoSize = true;
+            this.tipoUsuario_lbl.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipoUsuario_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.tipoUsuario_lbl.Location = new System.Drawing.Point(75, 499);
+            this.tipoUsuario_lbl.Name = "tipoUsuario_lbl";
+            this.tipoUsuario_lbl.Size = new System.Drawing.Size(15, 20);
+            this.tipoUsuario_lbl.TabIndex = 5;
+            this.tipoUsuario_lbl.Text = "t";
+            // 
             // pb_CuentaUsuario
             // 
             this.pb_CuentaUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pb_CuentaUsuario.Image = global::SistemaParqueoAdministracion.Properties.Resources.verification;
             this.pb_CuentaUsuario.Location = new System.Drawing.Point(3, 491);
             this.pb_CuentaUsuario.Name = "pb_CuentaUsuario";
-            this.pb_CuentaUsuario.Size = new System.Drawing.Size(96, 73);
-            this.pb_CuentaUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_CuentaUsuario.Size = new System.Drawing.Size(64, 64);
+            this.pb_CuentaUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pb_CuentaUsuario.TabIndex = 49;
             this.pb_CuentaUsuario.TabStop = false;
+            // 
+            // pn_ReporteSubmenu
+            // 
+            this.pn_ReporteSubmenu.Controls.Add(this.historial_cierre_btn);
+            this.pn_ReporteSubmenu.Controls.Add(this.detalle_cierre_btn);
+            this.pn_ReporteSubmenu.Controls.Add(this.cierre_diario_btn);
+            this.pn_ReporteSubmenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pn_ReporteSubmenu.Location = new System.Drawing.Point(36, 353);
+            this.pn_ReporteSubmenu.Name = "pn_ReporteSubmenu";
+            this.pn_ReporteSubmenu.Size = new System.Drawing.Size(198, 121);
+            this.pn_ReporteSubmenu.TabIndex = 47;
+            this.pn_ReporteSubmenu.Visible = false;
             // 
             // historial_cierre_btn
             // 
@@ -500,6 +368,145 @@
             this.tipoUsuario_btn.UseVisualStyleBackColor = false;
             this.tipoUsuario_btn.Click += new System.EventHandler(this.tipoUsuario_btn_Click);
             // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(234, 622);
+            this.shapeContainer1.TabIndex = 48;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lineShape1.BorderWidth = 2;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
+            this.lineShape1.X1 = 2;
+            this.lineShape1.X2 = 233;
+            this.lineShape1.Y1 = 484;
+            this.lineShape1.Y2 = 484;
+            // 
+            // btn_Restaurar
+            // 
+            this.btn_Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Restaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Restaurar.Enabled = false;
+            this.btn_Restaurar.Image = global::SistemaParqueoAdministracion.Properties.Resources.multi_tab;
+            this.btn_Restaurar.Location = new System.Drawing.Point(801, 7);
+            this.btn_Restaurar.Name = "btn_Restaurar";
+            this.btn_Restaurar.Size = new System.Drawing.Size(15, 15);
+            this.btn_Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Restaurar.TabIndex = 44;
+            this.btn_Restaurar.TabStop = false;
+            this.toolTip1.SetToolTip(this.btn_Restaurar, "Restaurar");
+            this.btn_Restaurar.Visible = false;
+            this.btn_Restaurar.Click += new System.EventHandler(this.btn_Restaurar_Click);
+            this.btn_Restaurar.MouseLeave += new System.EventHandler(this.btn_Restaurar_MouseLeave);
+            this.btn_Restaurar.MouseHover += new System.EventHandler(this.btn_Restaurar_MouseHover);
+            // 
+            // btn_minimize
+            // 
+            this.btn_minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_minimize.Image = global::SistemaParqueoAdministracion.Properties.Resources.minimize;
+            this.btn_minimize.Location = new System.Drawing.Point(780, 7);
+            this.btn_minimize.Name = "btn_minimize";
+            this.btn_minimize.Size = new System.Drawing.Size(15, 15);
+            this.btn_minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_minimize.TabIndex = 45;
+            this.btn_minimize.TabStop = false;
+            this.toolTip1.SetToolTip(this.btn_minimize, "Minimizar");
+            this.btn_minimize.Click += new System.EventHandler(this.btn_minimize_Click);
+            this.btn_minimize.MouseLeave += new System.EventHandler(this.btn_minimize_MouseLeave);
+            this.btn_minimize.MouseHover += new System.EventHandler(this.btn_minimize_MouseHover);
+            // 
+            // btn_Maximize
+            // 
+            this.btn_Maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Maximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Maximize.Enabled = false;
+            this.btn_Maximize.Image = global::SistemaParqueoAdministracion.Properties.Resources.blank_check_box;
+            this.btn_Maximize.Location = new System.Drawing.Point(801, 7);
+            this.btn_Maximize.Name = "btn_Maximize";
+            this.btn_Maximize.Size = new System.Drawing.Size(15, 15);
+            this.btn_Maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Maximize.TabIndex = 46;
+            this.btn_Maximize.TabStop = false;
+            this.toolTip1.SetToolTip(this.btn_Maximize, "Maximizar");
+            this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
+            this.btn_Maximize.MouseLeave += new System.EventHandler(this.btn_Maximize_MouseLeave);
+            this.btn_Maximize.MouseHover += new System.EventHandler(this.btn_Maximize_MouseHover);
+            // 
+            // btn_Close
+            // 
+            this.btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Close.Image = global::SistemaParqueoAdministracion.Properties.Resources.cancel1;
+            this.btn_Close.Location = new System.Drawing.Point(822, 7);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.Size = new System.Drawing.Size(15, 15);
+            this.btn_Close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Close.TabIndex = 1;
+            this.btn_Close.TabStop = false;
+            this.toolTip1.SetToolTip(this.btn_Close, "Cerrar");
+            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
+            this.btn_Close.MouseLeave += new System.EventHandler(this.btn_Close_MouseLeave);
+            this.btn_Close.MouseHover += new System.EventHandler(this.btn_Close_MouseHover);
+            // 
+            // pn_Superior
+            // 
+            this.pn_Superior.BackColor = System.Drawing.Color.White;
+            this.pn_Superior.Controls.Add(this.notActivated_lbl);
+            this.pn_Superior.Controls.Add(this.btn_Restaurar);
+            this.pn_Superior.Controls.Add(this.btn_minimize);
+            this.pn_Superior.Controls.Add(this.btn_Maximize);
+            this.pn_Superior.Controls.Add(this.btn_MenuVertical);
+            this.pn_Superior.Controls.Add(this.btn_Close);
+            this.pn_Superior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pn_Superior.Location = new System.Drawing.Point(234, 0);
+            this.pn_Superior.Name = "pn_Superior";
+            this.pn_Superior.Size = new System.Drawing.Size(843, 42);
+            this.pn_Superior.TabIndex = 41;
+            this.pn_Superior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_Superior_MouseDown);
+            // 
+            // notActivated_lbl
+            // 
+            this.notActivated_lbl.AutoSize = true;
+            this.notActivated_lbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.notActivated_lbl.ForeColor = System.Drawing.Color.DarkRed;
+            this.notActivated_lbl.Location = new System.Drawing.Point(276, 11);
+            this.notActivated_lbl.Name = "notActivated_lbl";
+            this.notActivated_lbl.Size = new System.Drawing.Size(291, 21);
+            this.notActivated_lbl.TabIndex = 43;
+            this.notActivated_lbl.Text = "SOFTWARE NO HA SIDO ACTIVADO...!";
+            // 
+            // btn_MenuVertical
+            // 
+            this.btn_MenuVertical.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MenuVertical.Image = global::SistemaParqueoAdministracion.Properties.Resources.menu1;
+            this.btn_MenuVertical.Location = new System.Drawing.Point(3, 4);
+            this.btn_MenuVertical.Name = "btn_MenuVertical";
+            this.btn_MenuVertical.Size = new System.Drawing.Size(37, 35);
+            this.btn_MenuVertical.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_MenuVertical.TabIndex = 0;
+            this.btn_MenuVertical.TabStop = false;
+            this.btn_MenuVertical.Visible = false;
+            this.btn_MenuVertical.Click += new System.EventHandler(this.btn_MenuVertical_Click);
+            // 
+            // pn_Central
+            // 
+            this.pn_Central.BackColor = System.Drawing.Color.White;
+            this.pn_Central.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pn_Central.Location = new System.Drawing.Point(234, 42);
+            this.pn_Central.Name = "pn_Central";
+            this.pn_Central.Size = new System.Drawing.Size(843, 580);
+            this.pn_Central.TabIndex = 42;
+            this.pn_Central.MouseEnter += new System.EventHandler(this.pn_Central_MouseEnter);
+            // 
             // MainScreenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -518,16 +525,16 @@
             this.Load += new System.EventHandler(this.MainScreenForm_Load);
             this.pn_MenuVertical.ResumeLayout(false);
             this.pn_MenuVertical.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_CuentaUsuario)).EndInit();
             this.pn_ReporteSubmenu.ResumeLayout(false);
-            this.pn_Superior.ResumeLayout(false);
-            this.pn_Superior.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Restaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Maximize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_MenuVertical)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Close)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_CuentaUsuario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pn_Superior.ResumeLayout(false);
+            this.pn_Superior.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_MenuVertical)).EndInit();
             this.ResumeLayout(false);
 
         }

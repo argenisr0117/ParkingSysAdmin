@@ -42,7 +42,8 @@ namespace SistemaParqueoAdministracion.Forms
         }
         private void CierreDiario_Load(object sender, EventArgs e)
         {
-
+            FechaInicial_dtp.Value = FechaInicial_dtp.Value.AddDays(-1);
+            Buscar_btn_Click(e, e);
         }
 
         private void Buscar_btn_Click(object sender, EventArgs e)
@@ -86,6 +87,12 @@ namespace SistemaParqueoAdministracion.Forms
             {
                 MessageBox.Show(ex.Message, "Sistema de Parqueo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void exit_btn_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            this.Close();
         }
     }
 }

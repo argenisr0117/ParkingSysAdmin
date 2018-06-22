@@ -137,9 +137,39 @@ namespace SistemaParqueoAdministracion.Forms
         {
             if(panel==false)
             {
-                panel1.Visible = panel;
+                //panel1.Visible = panel;
+                FechaFinal_dtp.Visible = panel;
+                FechaInicial_dtp.Visible = panel;
+                Buscar_btn.Visible = panel;
+                label1.Visible = panel;
+                label2.Visible = panel;
                 reportViewer1.Dock = DockStyle.Fill;
             }
+        }
+
+        private void btn_minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+
+        }
+
+        private void btn_Maximize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btn_Restaurar.Visible = true;
+            btn_Maximize.Visible = false;
+        }
+
+        private void btn_Restaurar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btn_Restaurar.Visible = false;
+            btn_Maximize.Visible = true;
+        }
+
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
